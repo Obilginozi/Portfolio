@@ -1,0 +1,729 @@
+{
+    "basic_info": {
+      "titles": ["Computer Engineer", "Java Developer", "Back-end Developer", "Dev Account Manager", "Front-end Developer"],
+      "question": "Are you developer?",
+      "description_header": "Hi, ",
+      "contact_header": "Contact: ",
+      "contact": "oguzhanbilgin@outlook.com",
+      "description": "Software Developer with over 4 years of experience in full-stack development, specialising in both back-end and front-end technologies. Expert in Java, C programming and Python with a strong foundation in data structures, algorithms, and software development principles. A highly motivated team player, adept at writing product development code, contributing to product documentation, and debugging/resolving issues by analysing the source of product/system problems. Experienced in participating in product design reviews and continuously improving solutions. Always eager to learn new technologies and methods related to backend development, and adaptable to different work cultures. Ready to take on new challenges and drive innovation. I am a researcher and ambitious person who is motivated by being involved in long-term and great works.",
+      "description0": "Drum Player, Road Biker, Chess Player, Rubiks Cuber",
+      "description1": "17.01.1997",
+      "description2": "Dublin/Ireland, D04",
+      "description3": "Bursa/Turkey, 16800",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "certificates": "Certificates",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "Init SE",
+        "startDate": "2024",
+        "description": "Intelligent and Real Time Transportation Systems ",
+        "images": [
+          "images/portfolio/projects/initSe.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-spring-plain",
+            "name": "SpringBoot"
+          },
+          {
+            "class": "devicon-postgresql-plain",
+            "name": "Postgre DB"
+          },
+          {
+            "class": "devicon-docker-plain",
+            "name": "Docker"
+          }
+        ]
+      },
+      {
+        "title": "Turk Telekom",
+        "startDate": "2022",
+        "description": "Web-Portal for onlineislemler.turktelekom.com.tr/",
+        "images": [
+          "images/portfolio/projects/TurkTelekom.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-spring-plain",
+            "name": "SpringBoot"
+          },
+          {
+            "class": "devicon-oracle-original",
+            "name": "Oracle DB"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "Html5"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "jltwinsshop.com",
+        "startDate": "2022",
+        "description": "E-commerce website for www.jltwinsshop.com",
+        "images": [
+          "images/portfolio/projects/JL - Logo.jpg",
+          "images/portfolio/projects/JL - Cover.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-spring-plain",
+            "name": "SpringBoot"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySql"
+          },
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Fotoğrafcım",
+        "startDate": "2021",
+        "description": "Graduation project - It brings together local photographers and customers and exchanges data through the system.",
+        "images": [
+          "images/portfolio/projects/Fotografcim - Logo.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-spring-plain",
+            "name": "SpringBoot"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySql"
+          },
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "U-ETDS",
+        "startDate": "2020",
+        "description": "It enables companies in the logistics sector to report the goods they transport to the Turkey Ministry of Transport. I used Java, SpringBoot, Hibernate and ThymeLeaf as backend developer in this project. MySql was used as the database. On the front-end, I actively developed Html5, JavaScript, Bootstrap.",
+        "images": [
+          "images/portfolio/projects/Uetds - Logo.png",
+          "images/portfolio/projects/Ulastirma - Logo.png"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-spring-plain",
+            "name": "SpringBoot"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySql"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "Html5"
+          },
+          {
+            "class": "devicon-bootstrap-plain",
+            "name": "Bootstrap"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "OverCatch",
+        "startDate": "2020",
+        "description": "Accounting Project for Company in England. In this project, I used Java, SpringBoot, Hibernate and Phyton languages as back-end developer. When necessary, I made improvements on the front-end side.",
+        "images": [
+          "images/portfolio/projects/OverCatch - Logo.png"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-spring-plain",
+            "name": "SpringBoot"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySql"
+          },
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          }
+        ]
+      }
+    ],
+    "certificates": [
+      {
+        "title": "Amazon Web Servers - Completion",
+        "startDate": "December 2023",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/AWS - Completion.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Amazon Web Servers - Technical Essentials",
+        "startDate": "April 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/AWS - Technical Essentials.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Kafein Technology Solutions",
+        "startDate": "November 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/ISO 27001 - 1.png",
+          "images/portfolio/certificates/Yöneticiliğe İlk Adım-1.png",
+          "images/portfolio/certificates/İnovasyon Kültürü-1.png",
+          "images/portfolio/certificates/İş Dünyasında İnovasyon-1.png",
+          "images/portfolio/certificates/Sporda ve İş Hayatında Liderlik-1.png",
+          "images/portfolio/certificates/Yaratıcı Düşünme ve İnovasyon-1.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Turkcell - Java 101 (1/3)",
+        "startDate": "August 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Turkcell - Java101.png"
+        ],
+        "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Turkcell - Java 201 (2/3)",
+        "startDate": "November 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Turkcell - Java201.png"
+        ],
+        "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Turkcell - Java 301 (3/3)",
+        "startDate": "December 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Turkcell - Java301.png"
+        ],
+        "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "BTK Academy - Advanced JAVA",
+        "startDate": "January 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Ileri Java.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "BTK Academy - Web Programing with React",
+        "startDate": "February 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/React.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "BTK Academy - Advanced Network Technologies",
+        "startDate": "March 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/agTekno.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "KOÇ Academy - MySql Database Management",
+        "startDate": "February 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Sertifika - N0AD1644149473M0EBM6D-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "KOÇ Academy - Work with NodeJs",
+        "startDate": "February 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Sertifika - M2N3V164501351804-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "KOÇ Academy - MongoDb and Mongoose with NodeJs",
+        "startDate": "February 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Sertifika - ADD638316452848634BA70-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Global IA Hub - Data Visualization with Python",
+        "startDate": "January 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/AI Hub data.png"
+        ],
+        "url": "https://globalaihub.com/members/obilginozi/",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Global IA Hub - Introduction to Machine Learning",
+        "startDate": "August 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/AI Hub mak.png"
+        ],
+        "url": "https://globalaihub.com/members/obilginozi/",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Global IA Hub - Introduction to Deep Learning",
+        "startDate": "September 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/AI Hub deep.png"
+        ],
+        "url": "https://globalaihub.com/members/obilginozi/",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Global IA Hub - Introduction to AI, Robotics and Data",
+        "startDate": "November 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/AI Hub ai.png"
+        ],
+        "url": "https://globalaihub.com/members/obilginozi/",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Global IA Hub - Hyperautomation For Everyone and RPA ",
+        "startDate": "November 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/AI Hub hyper.png"
+        ],
+        "url": "https://globalaihub.com/members/obilginozi/",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Global IA Hub - Git / Version Control Systems",
+        "startDate": "September 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/AI Hub git.png"
+        ],
+        "url": "https://globalaihub.com/members/obilginozi/",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Turkcell - Web Programming 101 ",
+        "startDate": "September 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Turkcell - Web Programlama 101.png"
+        ],
+        "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Turkcell - Web Programming 201 ",
+        "startDate": "September 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Turkcell - Web Programlama 201.png"
+        ],
+        "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Turkcell - Web Programming 301 ",
+        "startDate": "October 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Turkcell - Web Programlama 301.png"
+        ],
+        "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "IEEE & Google - Artificial intelligence in automation",
+        "startDate": "May 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/l4aAMBv4.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "IEEE & Google - Artificial intelligence in quality control",
+        "startDate": "May 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/EYONDmR5.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "IEEE & Google - Artificial intelligence in the defense industry",
+        "startDate": "May 2021",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/MYAE7MOY.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "KOÇ Academy - C# and Object-Oriented Programing",
+        "startDate": "February 2022",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/Sertifika - 1NA06VD16444426532VVM5-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "BBC - English Pronunciation",
+        "startDate": "November 2020",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/BBC - Pronunciation.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Leadership - Motivation - Time Management - Body Language and Diction",
+        "startDate": "October 2012",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/BursaTSO.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "EKAD - Monitoring and Protecting Sea Turtles",
+        "startDate": "August 2014",
+        "description": "",
+        "images": [
+          "images/portfolio/certificates/EKAD.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Init SE, Maynooth, Ireland",
+        "title": "Backend Developer",
+        "years": "11.2024 - Current",
+        "icon": "fas fa-solid fa-badge-check experience-icon",
+        "mainTech": [
+          "Java - Postgres DB - Docker - Micro Services"
+        ],
+        "technologies": [
+          "Springboot",
+          "Hibernate",
+          "REST API",
+          "Mockito"
+        ]
+      },
+      {
+        "company": "Turk Telekom, Istanbul, Turkey",
+        "title": "Java Developer",
+        "years": "08.2022 - 08.2024",
+        "icon": "fas fa-solid fa-badge-check experience-icon",
+        "mainTech": [
+          "Java - Oracle DB - Micro Services"
+        ],
+        "technologies": [
+          "Springboot",
+          "Hibernate",
+          "REST API",
+          "SOAP API",
+          "iFrame",
+          "JavaScript",
+          "HTML"
+        ]
+      },
+      {
+        "company": "JL Twins GbR, Dorsten, Germany",
+        "title": "Web Developer",
+        "years": "10.2021 - 04.2022",
+        "icon": "fas fa-solid fa-badge-check experience-icon",
+        "mainTech": [
+          "SEO - JavaScript - HTML - CSS - Product Management"
+        ],
+        "technologies": [
+          "Shopify",
+          "Integrations",
+          "Web Design",
+          "Product Design",
+          "Photoshop",
+          "Templates",
+          "Social Media Management"
+
+        ]
+      },
+      {
+        "company": "Tein Technology, Duzce, Turkey",
+        "title": "Java Developer",
+        "years": "03.2020 - 06.2021",
+        "icon": "fas fa-solid fa-badge-check experience-icon",
+        "mainTech": [
+          "Java - MySQL - HTML - JavaScript"
+        ],
+        "technologies": [
+          "REST API",
+          "SOAP API",
+          "Springboot",
+          "jquery",
+          "Bootstrap",
+          "CSS"
+        ]
+      },
+      {
+        "company": "Lucky Bros'",
+        "title": "Supervisor Barista",
+        "years": "01.2018 - 09.2019",
+        "icon": "fab fa-java experience-icon",
+        "mainTech": [
+          "Third wave coffee"
+        ],
+        "technologies": [
+          "Espresso",
+          "Chemex",
+          "V60",
+          "Aeropress",
+          "Syphone"
+        ]
+      }
+    ]
+  }
