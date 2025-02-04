@@ -7,7 +7,7 @@
     "main.50cf102c.js.map": "/persona/static/js/main.50cf102c.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f76c29b.css",
-    "static/js/main.50cf102c.js"
+    "/persona/static/css/main.5f76c29b.css",
+    "/persona/static/js/main.50cf102c.js"
   ]
 }
