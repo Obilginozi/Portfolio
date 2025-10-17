@@ -91,8 +91,6 @@
                     
                     navigator.serviceWorker.register('/service-worker.js')
                         .then(function(registration) {
-                            console.log('✅ Portfolio: Service Worker registered successfully');
-                            console.log('📱 Portfolio: PWA features enabled');
                             
                             // Handle service worker updates silently
                             registration.addEventListener('updatefound', function() {
@@ -126,6 +124,44 @@
                 }
                 originalConsoleLog.apply(console, args);
             };
+            
+            // Global URL interceptor to fix malformed image URLs
+            function interceptImageRequests() {
+                const originalCreateElement = document.createElement;
+                document.createElement = function(tagName) {
+                    const element = originalCreateElement.call(this, tagName);
+                    if (tagName.toLowerCase() === 'img') {
+                        const originalSetAttribute = element.setAttribute;
+                        element.setAttribute = function(name, value) {
+                            if (name === 'src' && typeof value === 'string') {
+                                // Fix malformed image URLs
+                                if (value.includes('/images//assets/images/')) {
+                                    value = value.replace('/images//assets/images/', '/assets/images/');
+                                } else if (value.includes('/images/assets/images/')) {
+                                    value = value.replace('/images/assets/images/', '/assets/images/');
+                                } else if (value.includes('/Developer/images//assets/images/')) {
+                                    value = value.replace('/Developer/images//assets/images/', '/assets/images/');
+                                } else if (value.includes('/Developer/images/assets/images/')) {
+                                    value = value.replace('/Developer/images/assets/images/', '/assets/images/');
+                                } else if (value.includes('/IvyMontgomery/images//assets/images/')) {
+                                    value = value.replace('/IvyMontgomery/images//assets/images/', '/assets/images/');
+                                } else if (value.includes('/IvyMontgomery/images/assets/images/')) {
+                                    value = value.replace('/IvyMontgomery/images/assets/images/', '/assets/images/');
+                                } else if (value.includes('/AtletikBezelye/images//assets/images/')) {
+                                    value = value.replace('/AtletikBezelye/images//assets/images/', '/assets/images/');
+                                } else if (value.includes('/AtletikBezelye/images/assets/images/')) {
+                                    value = value.replace('/AtletikBezelye/images/assets/images/', '/assets/images/');
+                                }
+                            }
+                            return originalSetAttribute.call(this, name, value);
+                        };
+                    }
+                    return element;
+                };
+            }
+            
+            // Initialize URL interceptor
+            interceptImageRequests();
             
             // Welcome message for curious developers! 🎉
             setTimeout(() => {

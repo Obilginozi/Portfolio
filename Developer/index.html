@@ -5,22 +5,25 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"/>
     <meta name="theme-color" content="#000000"/>
-    <meta name="description" content="Oğuzhan Alfred Bilgin - Full-Stack Developer Portfolio. Computer Engineer with 4+ years experience in Java, Spring Boot, React, and AWS."/>
-    <meta name="keywords" content="Oğuzhan Alfred Bilgin, Oğuzhan, Bilgin, Portfolio, CV, Developer, Java Developer, Backend Developer, Frontend Developer, Spring Boot, React, AWS, Dublin, Ireland"/>
+    <meta name="description" content="Oğuzhan Alfred Bilgin - Full-Stack Developer & Computer Engineer. 4+ years experience in Java, Spring Boot, React, AWS, Microservices. Dublin-based software developer specializing in backend development, cloud architecture, and modern web applications."/>
+    <meta name="keywords" content="Oğuzhan Alfred Bilgin, Oğuzhan Bilgin, Full-Stack Developer, Java Developer, Spring Boot Developer, React Developer, AWS Developer, Backend Developer, Frontend Developer, Computer Engineer, Software Engineer, Microservices, Cloud Computing, Dublin Developer, Ireland Developer, Java Spring Boot, React JS, AWS Cloud, REST API, Database Design, Software Architecture, Web Development, Mobile Development, DevOps, Docker, Kubernetes, PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, Apache Kafka, RabbitMQ, Jenkins, Git, Agile Development, Scrum, TDD, Clean Code, SOLID Principles, Design Patterns, System Design, Performance Optimization, Scalable Applications, Enterprise Software"/>
     <meta name="author" content="Oğuzhan Alfred Bilgin"/>
     
     <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="Oğuzhan Alfred Bilgin | Portfolio"/>
-    <meta property="og:description" content="Full-Stack Developer Portfolio - Java, Spring Boot, React, AWS"/>
+    <meta property="og:title" content="Oğuzhan Alfred Bilgin | Full-Stack Developer & Computer Engineer"/>
+    <meta property="og:description" content="Dublin-based Full-Stack Developer with 4+ years experience in Java, Spring Boot, React, AWS. Specializing in backend development, cloud architecture, and modern web applications."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://oguzhanbilgin.com"/>
     <meta property="og:image" content="https://oguzhanbilgin.com/assets/images/ProfilePicture.png"/>
+    <meta property="og:site_name" content="Oğuzhan Alfred Bilgin Portfolio"/>
+    <meta property="og:locale" content="en_US"/>
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Oğuzhan Alfred Bilgin | Portfolio"/>
-    <meta name="twitter:description" content="Full-Stack Developer Portfolio - Java, Spring Boot, React, AWS"/>
+    <meta name="twitter:title" content="Oğuzhan Alfred Bilgin | Full-Stack Developer"/>
+    <meta name="twitter:description" content="Dublin-based Full-Stack Developer specializing in Java, Spring Boot, React, AWS. 4+ years experience in software development and cloud architecture."/>
     <meta name="twitter:image" content="https://oguzhanbilgin.com/assets/images/ProfilePicture.png"/>
+    <meta name="twitter:creator" content="@oguzhanbilgin"/>
     
     <!-- Mobile App Meta Tags -->
     <meta name="mobile-web-app-capable" content="yes"/>
@@ -30,24 +33,73 @@
     
     <!-- Favicon and Icons -->
     <link rel="icon" href="/favicon.ico"/>
-    <link rel="apple-touch-icon" href="/assets/images/ProfilePicture.png"/>
+    <link rel="apple-touch-icon" href="./assets/images/ProfilePicture.png"/>
     
     <!-- Manifest for PWA -->
-    <link rel="manifest" href="/manifest.json"/>
+    <link rel="manifest" href="./manifest.json"/>
     
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous"/>
     
     <!-- Main Stylesheet -->
-    <link href="/assets/css/main.5f76c29b.css" rel="stylesheet">
+    <link href="./assets/css/main.5f76c29b.css" rel="stylesheet">
     
     <!-- Mobile Optimizations -->
-    <link href="/assets/css/mobile.css" rel="stylesheet">
+    <link href="./assets/css/mobile.css" rel="stylesheet">
+    
+    <!-- Light Theme Fix for About Section -->
+    <style>
+        /* Light theme styling for About section - based on original source */
+        body[data-theme="light"] #about {
+            background-color: #f8f9fa;
+        }
+        
+        body[data-theme="light"] #about h1 span {
+            color: #212529;
+        }
+        
+        body[data-theme="light"] #about .card {
+            background: #ffffff;
+            color: #212529;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+        
+        body[data-theme="light"] #about .card-header {
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+            padding: 0.75rem 1rem;
+        }
+        
+        body[data-theme="light"] #about .card-body {
+            background: #ffffff;
+            color: #212529;
+        }
+        
+        body[data-theme="light"] #about .polaroid span {
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Ensure proper contrast for text in light mode */
+        body[data-theme="light"] #about .wave {
+            color: #212529;
+        }
+        
+        body[data-theme="light"] #about a {
+            color: #0066cc;
+        }
+        
+        body[data-theme="light"] #about a:hover {
+            color: #004499;
+        }
+    </style>
+    
     
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="/assets/js/main.2c90698c.js" as="script">
-    <link rel="preload" href="/assets/css/main.5f76c29b.css" as="style">
+    <link rel="preload" href="./assets/js/main.2c90698c.js" as="script">
+    <link rel="preload" href="./assets/css/main.5f76c29b.css" as="style">
 </head>
 <body data-theme="light">
     <noscript>
@@ -60,9 +112,9 @@
     <div id="root"></div>
     
     <!-- Scripts -->
-    <script defer="defer" src="/assets/js/main.2c90698c.js"></script>
+    <script defer="defer" src="./assets/js/main.2c90698c.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="/assets/js/mobile.js"></script>
+    <script src="./assets/js/mobile.js"></script>
     
     <!-- Mobile Touch Events Support -->
     <script>
@@ -91,8 +143,6 @@
                     
                     navigator.serviceWorker.register('/service-worker.js')
                         .then(function(registration) {
-                            console.log('✅ Portfolio: Service Worker registered successfully');
-                            console.log('📱 Portfolio: PWA features enabled');
                             
                             // Handle service worker updates silently
                             registration.addEventListener('updatefound', function() {
@@ -127,11 +177,55 @@
                 originalConsoleLog.apply(console, args);
             };
             
+            // Global URL interceptor to fix malformed image URLs
+            function interceptImageRequests() {
+                const originalCreateElement = document.createElement;
+                document.createElement = function(tagName) {
+                    const element = originalCreateElement.call(this, tagName);
+                    if (tagName.toLowerCase() === 'img') {
+                        const originalSetAttribute = element.setAttribute;
+                        element.setAttribute = function(name, value) {
+                            if (name === 'src' && typeof value === 'string') {
+                                // Fix malformed image URLs
+                                if (value.includes('/images//assets/images/')) {
+                                    value = value.replace('/images//assets/images/', '/assets/images/');
+                                } else if (value.includes('/images/assets/images/')) {
+                                    value = value.replace('/images/assets/images/', '/assets/images/');
+                                } else if (value.includes('/Developer/images//assets/images/')) {
+                                    value = value.replace('/Developer/images//assets/images/', '/assets/images/');
+                                } else if (value.includes('/Developer/images/assets/images/')) {
+                                    value = value.replace('/Developer/images/assets/images/', '/assets/images/');
+                                } else if (value.includes('/IvyMontgomery/images//assets/images/')) {
+                                    value = value.replace('/IvyMontgomery/images//assets/images/', '/assets/images/');
+                                } else if (value.includes('/IvyMontgomery/images/assets/images/')) {
+                                    value = value.replace('/IvyMontgomery/images/assets/images/', '/assets/images/');
+                                } else if (value.includes('/AtletikBezelye/images//assets/images/')) {
+                                    value = value.replace('/AtletikBezelye/images//assets/images/', '/assets/images/');
+                                } else if (value.includes('/AtletikBezelye/images/assets/images/')) {
+                                    value = value.replace('/AtletikBezelye/images/assets/images/', '/assets/images/');
+                                }
+                            }
+                            return originalSetAttribute.call(this, name, value);
+                        };
+                    }
+                    return element;
+                };
+            }
+            
+            // Initialize URL interceptor
+            interceptImageRequests();
+            
             // Welcome message for curious developers! 🎉
             setTimeout(() => {
+                console.log('%c🎉 Hey there, curious developer!', 'color: #ff6b6b; font-size: 16px; font-weight: bold;');
+                console.log('%c👋 Thanks for checking out my portfolio!', 'color: #4ecdc4; font-size: 14px;');
                 console.log('%c🎨 Welcome to Oğuzhan\'s Portfolio!', 'color: #2c3e50; font-size: 18px; font-weight: bold;');
                 console.log('%c🌟 Built with React, TypeScript, and lots of ☕', 'color: #34495e; font-size: 14px;');
                 console.log('%c🎯 Check out the mobile optimizations and PWA features!', 'color: #7f8c8d; font-size: 12px;');
+                console.log('%c💡 Fun fact: This portfolio is built with React and deployed on GitHub Pages!', 'color: #45b7d1; font-size: 12px;');
+                console.log('%c🚀 Want to see the code? Check out: https://github.com/Obilginozi/Portfolio', 'color: #96ceb4; font-size: 12px;');
+                console.log('%c📧 Got questions? Drop me a line: oguzhanbilgin@outlook.com', 'color: #feca57; font-size: 12px;');
+                console.log('%c🎯 P.S. - The service worker is caching everything for offline use! Pretty cool, right?', 'color: #ff9ff3; font-size: 12px;');
             }, 1000);
     </script>
 </body>

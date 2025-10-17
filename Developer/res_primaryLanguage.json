@@ -644,7 +644,7 @@
         "company": "Init SE, Maynooth, Ireland",
         "title": "Backend Developer",
         "years": "11.2024 - Current",
-        "icon": "fas fa-solid fa-badge-check experience-icon",
+        "icon": "fab fa-java experience-icon",
         "mainTech": [
           "Java - Postgres DB - Docker - Micro Services"
         ],
@@ -659,7 +659,7 @@
         "company": "Turk Telekom, Istanbul, Turkey",
         "title": "Java Developer",
         "years": "08.2022 - 08.2024",
-        "icon": "fas fa-solid fa-badge-check experience-icon",
+        "icon": "fab fa-java experience-icon",
         "mainTech": [
           "Java - Oracle DB - Micro Services"
         ],
@@ -677,7 +677,7 @@
         "company": "JL Twins GbR, Dorsten, Germany",
         "title": "Web Developer",
         "years": "10.2021 - 04.2022",
-        "icon": "fas fa-solid fa-badge-check experience-icon",
+        "icon": "fab fa-java experience-icon",
         "mainTech": [
           "SEO - JavaScript - HTML - CSS - Product Management"
         ],
@@ -696,7 +696,7 @@
         "company": "Tein Technology, Duzce, Turkey",
         "title": "Java Developer",
         "years": "03.2020 - 06.2021",
-        "icon": "fas fa-solid fa-badge-check experience-icon",
+        "icon": "fab fa-java experience-icon",
         "mainTech": [
           "Java - MySQL - HTML - JavaScript"
         ],

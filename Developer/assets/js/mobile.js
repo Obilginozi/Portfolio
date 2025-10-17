@@ -2,13 +2,11 @@
 (function() {
     'use strict';
     
-    console.log('📱 Portfolio: Mobile enhancement script loading...');
     
     // Mobile Detection and Enhancement
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     
-    console.log('🔍 Portfolio: Device detection - Mobile:', isMobile, 'Touch:', isTouchDevice);
     
     // Add mobile classes to body
     if (isMobile) {
@@ -148,13 +146,10 @@
     
     // Initialize when DOM is ready
     if (document.readyState === 'loading') {
-        console.log('⏳ Portfolio: Waiting for DOM to load...');
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('✅ Portfolio: DOM loaded - initializing mobile optimizations');
             initMobileOptimizations();
         });
     } else {
-        console.log('✅ Portfolio: DOM already loaded - initializing mobile optimizations');
         initMobileOptimizations();
     }
     
@@ -221,24 +216,48 @@
     
     document.head.insertAdjacentHTML('beforeend', mobileStyles);
     
-    console.log('🎨 Portfolio: Mobile styles injected successfully');
-    console.log('🚀 Portfolio: Mobile enhancement script loaded completely');
     
-    // Fix malformed image URLs before they cause issues
-    function fixImageUrls() {
-        const images = document.querySelectorAll('img');
-        images.forEach(img => {
-            if (img.src && img.src.includes('/images//assets/images/')) {
-                const correctedSrc = img.src.replace('/images//assets/images/', '/assets/images/');
-                console.log('🔧 Portfolio: Fixed malformed image URL:', img.src, '->', correctedSrc);
-                img.src = correctedSrc;
-            } else if (img.src && img.src.includes('/images/assets/images/')) {
-                const correctedSrc = img.src.replace('/images/assets/images/', '/assets/images/');
-                console.log('🔧 Portfolio: Fixed malformed image URL:', img.src, '->', correctedSrc);
-                img.src = correctedSrc;
-            }
-        });
-    }
+        // Fix malformed image URLs before they cause issues
+        function fixImageUrls() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.src) {
+                    let correctedSrc = img.src;
+                    let wasFixed = false;
+                    
+                    // Handle all possible malformed patterns
+                    if (correctedSrc.includes('/images//assets/images/')) {
+                        correctedSrc = correctedSrc.replace('/images//assets/images/', '/assets/images/');
+                        wasFixed = true;
+                    } else if (correctedSrc.includes('/images/assets/images/')) {
+                        correctedSrc = correctedSrc.replace('/images/assets/images/', '/assets/images/');
+                        wasFixed = true;
+                    } else if (correctedSrc.includes('/Developer/images//assets/images/')) {
+                        correctedSrc = correctedSrc.replace('/Developer/images//assets/images/', '/assets/images/');
+                        wasFixed = true;
+                    } else if (correctedSrc.includes('/Developer/images/assets/images/')) {
+                        correctedSrc = correctedSrc.replace('/Developer/images/assets/images/', '/assets/images/');
+                        wasFixed = true;
+                    } else if (correctedSrc.includes('/IvyMontgomery/images//assets/images/')) {
+                        correctedSrc = correctedSrc.replace('/IvyMontgomery/images//assets/images/', '/assets/images/');
+                        wasFixed = true;
+                    } else if (correctedSrc.includes('/IvyMontgomery/images/assets/images/')) {
+                        correctedSrc = correctedSrc.replace('/IvyMontgomery/images/assets/images/', '/assets/images/');
+                        wasFixed = true;
+                    } else if (correctedSrc.includes('/AtletikBezelye/images//assets/images/')) {
+                        correctedSrc = correctedSrc.replace('/AtletikBezelye/images//assets/images/', '/assets/images/');
+                        wasFixed = true;
+                    } else if (correctedSrc.includes('/AtletikBezelye/images/assets/images/')) {
+                        correctedSrc = correctedSrc.replace('/AtletikBezelye/images/assets/images/', '/assets/images/');
+                        wasFixed = true;
+                    }
+                    
+                    if (wasFixed) {
+                        img.src = correctedSrc;
+                    }
+                }
+            });
+        }
     
     // Run URL fix immediately and on DOM changes
     fixImageUrls();
@@ -270,12 +289,7 @@
     
     // Easter eggs for curious developers! 🥚
     setTimeout(() => {
-        console.log('%c🎉 Hey there, curious developer!', 'color: #ff6b6b; font-size: 16px; font-weight: bold;');
-        console.log('%c👋 Thanks for checking out my portfolio!', 'color: #4ecdc4; font-size: 14px;');
-        console.log('%c💡 Fun fact: This portfolio is built with React and deployed on GitHub Pages!', 'color: #45b7d1; font-size: 12px;');
-            console.log('%c🚀 Want to see the code? Check out: https://github.com/Obilginozi/Portfolio', 'color: #96ceb4; font-size: 12px;');
-        console.log('%c📧 Got questions? Drop me a line: oguzhanbilgin@outlook.com', 'color: #feca57; font-size: 12px;');
-        console.log('%c🎯 P.S. - The service worker is caching everything for offline use! Pretty cool, right?', 'color: #ff9ff3; font-size: 12px;');
+        // Messages are now handled in index.html to avoid duplicates
     }, 2000);
     
 })();

@@ -1,4 +1,4 @@
-image.png# Oğuzhan Alfred Bilgin - Portfolio
+Oguzhan Alfred Bilgin - Portfolio
 
 A modern, responsive portfolio website showcasing my professional experience, projects, and skills as a Full-Stack Developer.
 
@@ -63,7 +63,7 @@ persona/
 This portfolio is automatically deployed to GitHub Pages:
 
 1. **Repository**: `https://github.com/Obilginozi/Portfolio`
-2. **Custom Domain**: `oguzhanbilgin.com` (configured via CNAME)
+2. **Custom Domain**: `oguzhanbilgin.com`
 3. **Deployment**: Automatic deployment on push to main branch
 4. **SSL**: Automatic HTTPS via GitHub Pages
 
@@ -127,8 +127,6 @@ Currently working as a Backend Developer at Init SE in Ireland, focusing on inte
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
+This project is open source.
 
 **Built with ❤️ by Oğuzhan Alfred Bilgin**

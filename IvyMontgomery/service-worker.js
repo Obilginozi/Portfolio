@@ -1,5 +1,5 @@
 // Service Worker for Portfolio
-const CACHE_NAME = 'portfolio-v6';
+const CACHE_NAME = 'portfolio-v7';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -48,13 +48,25 @@ self.addEventListener('fetch', function(event) {
   let requestUrl = event.request.url;
   let correctedUrl = null;
   
-  // Fix various path issues silently
+  // Fix various path issues silently - handle all possible malformed patterns
   if (requestUrl.includes('/images//assets/images/')) {
     correctedUrl = requestUrl.replace('/images//assets/images/', '/assets/images/');
   } else if (requestUrl.includes('/images/assets/images/')) {
     correctedUrl = requestUrl.replace('/images/assets/images/', '/assets/images/');
   } else if (requestUrl.includes('//assets/images/')) {
     correctedUrl = requestUrl.replace('//assets/images/', '/assets/images/');
+  } else if (requestUrl.includes('/Developer/images//assets/images/')) {
+    correctedUrl = requestUrl.replace('/Developer/images//assets/images/', '/assets/images/');
+  } else if (requestUrl.includes('/Developer/images/assets/images/')) {
+    correctedUrl = requestUrl.replace('/Developer/images/assets/images/', '/assets/images/');
+  } else if (requestUrl.includes('/IvyMontgomery/images//assets/images/')) {
+    correctedUrl = requestUrl.replace('/IvyMontgomery/images//assets/images/', '/assets/images/');
+  } else if (requestUrl.includes('/IvyMontgomery/images/assets/images/')) {
+    correctedUrl = requestUrl.replace('/IvyMontgomery/images/assets/images/', '/assets/images/');
+  } else if (requestUrl.includes('/AtletikBezelye/images//assets/images/')) {
+    correctedUrl = requestUrl.replace('/AtletikBezelye/images//assets/images/', '/assets/images/');
+  } else if (requestUrl.includes('/AtletikBezelye/images/assets/images/')) {
+    correctedUrl = requestUrl.replace('/AtletikBezelye/images/assets/images/', '/assets/images/');
   }
   
   // If URL was corrected, create a new request with the corrected URL
