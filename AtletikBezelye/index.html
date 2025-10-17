@@ -1,138 +1,753 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Oğuzhan Alfred Bilgin | Portfolio</title>
+    <title>Atletik Bezelye | Turkish Musician & Producer</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"/>
-    <meta name="theme-color" content="#000000"/>
-    <meta name="description" content="Oğuzhan Alfred Bilgin - Full-Stack Developer Portfolio. Computer Engineer with 4+ years experience in Java, Spring Boot, React, and AWS."/>
-    <meta name="keywords" content="Oğuzhan Alfred Bilgin, Oğuzhan, Bilgin, Portfolio, CV, Developer, Java Developer, Backend Developer, Frontend Developer, Spring Boot, React, AWS, Dublin, Ireland"/>
-    <meta name="author" content="Oğuzhan Alfred Bilgin"/>
-    
-    <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="Oğuzhan Alfred Bilgin | Portfolio"/>
-    <meta property="og:description" content="Full-Stack Developer Portfolio - Java, Spring Boot, React, AWS"/>
+    <meta name="theme-color" content="#e91e63"/>
+    <meta name="description" content="Atletik Bezelye - Turkish Musician & Producer. Discover his latest tracks, albums, and musical journey."/>
+    <meta name="keywords" content="Atletik Bezelye, Turkish Musician, Producer, Music, Spotify, Turkish Music, Indie"/>
+    <meta name="author" content="Atletik Bezelye"/>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Atletik Bezelye | Turkish Musician & Producer"/>
+    <meta property="og:description" content="Turkish Musician & Producer - Discover his latest tracks and musical journey"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://oguzhanbilgin.com"/>
-    <meta property="og:image" content="https://oguzhanbilgin.com/assets/images/ProfilePicture.png"/>
-    
+    <meta property="og:url" content="https://oguzhanbilgin.com/AtletikBezelye"/>
+    <meta property="og:image" content="https://oguzhanbilgin.com/AtletikBezelye/assets/images/atletik-profile.jpg"/>
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Oğuzhan Alfred Bilgin | Portfolio"/>
-    <meta name="twitter:description" content="Full-Stack Developer Portfolio - Java, Spring Boot, React, AWS"/>
-    <meta name="twitter:image" content="https://oguzhanbilgin.com/assets/images/ProfilePicture.png"/>
-    
-    <!-- Mobile App Meta Tags -->
-    <meta name="mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="apple-mobile-web-app-title" content="Oğuzhan Bilgin"/>
-    
-    <!-- Favicon and Icons -->
+    <meta name="twitter:title" content="Atletik Bezelye | Turkish Musician & Producer"/>
+    <meta name="twitter:description" content="Turkish Musician & Producer - Discover his latest tracks and musical journey"/>
+    <meta name="twitter:image" content="https://oguzhanbilgin.com/AtletikBezelye/assets/images/atletik-profile.jpg"/>
+
+    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico"/>
     <link rel="apple-touch-icon" href="/assets/images/ProfilePicture.png"/>
-    
-    <!-- Manifest for PWA -->
-    <link rel="manifest" href="/manifest.json"/>
-    
+
     <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap">
+
     <!-- Main Stylesheet -->
     <link href="/assets/css/main.5f76c29b.css" rel="stylesheet">
-    
-    <!-- Mobile Optimizations -->
     <link href="/assets/css/mobile.css" rel="stylesheet">
-    
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="/assets/js/main.2c90698c.js" as="script">
-    <link rel="preload" href="/assets/css/main.5f76c29b.css" as="style">
-</head>
-<body data-theme="light">
-    <noscript>
-        <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
-            <h2>JavaScript Required</h2>
-            <p>You need to enable JavaScript to run this app.</p>
-            <p>This portfolio requires JavaScript for the best experience.</p>
-        </div>
-    </noscript>
-    <div id="root"></div>
-    
-    <!-- Scripts -->
-    <script defer="defer" src="/assets/js/main.2c90698c.js"></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="/assets/js/mobile.js"></script>
-    
-    <!-- Mobile Touch Events Support -->
-    <script>
-        // Prevent zoom on double tap for iOS
-        let lastTouchEnd = 0;
-        document.addEventListener('touchend', function (event) {
-            const now = (new Date()).getTime();
-            if (now - lastTouchEnd <= 300) {
-                event.preventDefault();
-            }
-            lastTouchEnd = now;
-        }, false);
-        
-        // Add mobile class to body for CSS targeting
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            document.body.classList.add('mobile-device');
+
+    <!-- Custom Musician Styles -->
+    <style>
+        :root {
+            --primary-color: #e91e63;
+            --secondary-color: #f06292;
+            --accent-color: #ff5722;
+            --text-dark: #212121;
+            --text-light: #757575;
+            --bg-light: #fafafa;
+            --bg-dark: #121212;
+            --success-color: #4caf50;
         }
-        
-            // Register Service Worker - Override CRA default
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                    // Prevent CRA default service worker registration
-                    window.addEventListener('beforeunload', function() {
-                        // This prevents CRA from registering its default service worker
-                    });
-                    
-                    navigator.serviceWorker.register('/service-worker.js')
-                        .then(function(registration) {
-                            console.log('✅ Portfolio: Service Worker registered successfully');
-                            console.log('📱 Portfolio: PWA features enabled');
-                            
-                            // Handle service worker updates silently
-                            registration.addEventListener('updatefound', function() {
-                                const newWorker = registration.installing;
-                                newWorker.addEventListener('statechange', function() {
-                                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                        // New content is available, but don't show CRA messages
-                                        console.log('🔄 Portfolio: New content available - updating silently');
-                                        newWorker.postMessage({ action: 'skipWaiting' });
-                                    }
-                                });
-                            });
-                        })
-                        .catch(function(err) {
-                            console.error('❌ Portfolio: Service Worker registration failed:', err);
-                        });
-                });
-            } else {
-                console.log('⚠️ Portfolio: Service Worker not supported in this browser');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Music Section */
+        .music {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .spotify-player {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+
+        .player-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .spotify-embed {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            border: none;
+        }
+
+        /* Discography */
+        .discography {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .albums-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .album-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .album-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .album-cover {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .album-info {
+            padding: 1.5rem;
+        }
+
+        .album-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .album-year {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .album-tracks {
+            list-style: none;
+        }
+
+        .album-tracks li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .album-tracks li:last-child {
+            border-bottom: none;
+        }
+
+        .track-name {
+            font-weight: 500;
+        }
+
+        .track-duration {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Lyrics Section */
+        .lyrics {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .lyrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .lyrics-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .lyrics-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .lyrics-content {
+            color: var(--text-light);
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: var(--bg-dark);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
             }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .albums-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .lyrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="logo">Atletik Bezelye</a>
+            <ul class="nav-links">
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#music">Müzik</a></li>
+                <li><a href="#discography">Diskografi</a></li>
+                <li><a href="#lyrics">Şarkı Sözleri</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Atletik Bezelye</h1>
+                <p>Turkish Musician & Producer</p>
+                <div class="cta-buttons">
+                    <a href="#music" class="btn btn-primary">
+                        <i class="fab fa-spotify"></i>
+                        Dinle
+                    </a>
+                    <a href="#discography" class="btn btn-secondary">
+                        <i class="fas fa-music"></i>
+                        Diskografi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Müzikal Yolculuk</h3>
+                    <p>Atletik Bezelye, Türk müzik sahnesinde kendine özgü tarzıyla tanınan bir müzisyen ve prodüktördür. Elektronik müzik, indie rock ve Türk halk müziği unsurlarını harmanlayarak özgün bir ses yaratır.</p>
+                    <p>İstanbul'un dinamik müzik ortamında yetişen sanatçı, küçük mekanlardan büyük festivallere kadar geniş bir yelpazede performanslar sergilemiştir. Müziğinde teknoloji ile geleneksel unsurları birleştirerek çağdaş Türk müziğine katkıda bulunmaktadır.</p>
+                    <p>Atletik Bezelye'nin müziği, dinleyicilerini duygusal bir yolculuğa çıkarır ve Türk müzik kültürünün modern yorumunu sunar.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/assets/images/ProfilePicture.png" alt="Atletik Bezelye" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="container">
+            <h2 class="section-title">Son Müzikler</h2>
             
-            // Override CRA service worker messages
-            const originalConsoleLog = console.log;
-            console.log = function(...args) {
-                const message = args.join(' ');
-                if (message.includes('This web app is being served cache-first by a service worker') || 
-                    message.includes('https://bit.ly/CRA-PWA') ||
-                    message.includes('New content is available and will be used when all tabs for this page are closed')) {
-                    // Suppress CRA service worker messages
-                    return;
+            <div class="spotify-player">
+                <h3 class="player-title">
+                    <i class="fab fa-spotify"></i>
+                    Öne Çıkan Şarkı
+                </h3>
+                <iframe 
+                    src="https://open.spotify.com/embed/track/4iV5W9uYEdYUVa79Axb7Rh?utm_source=generator" 
+                    class="spotify-embed"
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="spotify-player">
+                <h3 class="player-title">
+                    <i class="fas fa-play-circle"></i>
+                    Son Albüm
+                </h3>
+                <iframe 
+                    src="https://open.spotify.com/embed/album/1A2GTWGtFfWp7KSQTwWOyo?utm_source=generator" 
+                    class="spotify-embed"
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discography Section -->
+    <section id="discography" class="discography">
+        <div class="container">
+            <h2 class="section-title">Diskografi</h2>
+            
+            <div class="albums-grid">
+                <!-- Album 1 -->
+                <div class="album-card">
+                    <div class="album-cover">
+                        <i class="fas fa-compact-disc"></i>
+                    </div>
+                    <div class="album-info">
+                        <h3 class="album-title">İstanbul Rüyası</h3>
+                        <p class="album-year">2024</p>
+                        <ul class="album-tracks">
+                            <li>
+                                <span class="track-name">Boğaz'da Sabah</span>
+                                <span class="track-duration">4:15</span>
+                            </li>
+                            <li>
+                                <span class="track-name">Galata Kulesi</span>
+                                <span class="track-duration">3:42</span>
+                            </li>
+                            <li>
+                                <span class="track-name">Kadıköy Gecesi</span>
+                                <span class="track-duration">4:28</span>
+                            </li>
+                            <li>
+                                <span class="track-name">Beyoğlu Blues</span>
+                                <span class="track-duration">3:55</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Album 2 -->
+                <div class="album-card">
+                    <div class="album-cover">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="album-info">
+                        <h3 class="album-title">Anadolu Elektronik</h3>
+                        <p class="album-year">2023</p>
+                        <ul class="album-tracks">
+                            <li>
+                                <span class="track-name">Kapadokya Synthesizer</span>
+                                <span class="track-duration">4:33</span>
+                            </li>
+                            <li>
+                                <span class="track-name">Ege Dalgaları</span>
+                                <span class="track-duration">3:58</span>
+                            </li>
+                            <li>
+                                <span class="track-name">Karadeniz Fırtınası</span>
+                                <span class="track-duration">4:12</span>
+                            </li>
+                            <li>
+                                <span class="track-name">Akdeniz Güneşi</span>
+                                <span class="track-duration">3:47</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Album 3 -->
+                <div class="album-card">
+                    <div class="album-cover">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="album-info">
+                        <h3 class="album-title">Dijital Aşk</h3>
+                        <p class="album-year">2022</p>
+                        <ul class="album-tracks">
+                            <li>
+                                <span class="track-name">Online Sevda</span>
+                                <span class="track-duration">3:25</span>
+                            </li>
+                            <li>
+                                <span class="track-name">WiFi Kalbi</span>
+                                <span class="track-duration">4:01</span>
+                            </li>
+                            <li>
+                                <span class="track-name">Bluetooth Öpücük</span>
+                                <span class="track-duration">3:38</span>
+                            </li>
+                            <li>
+                                <span class="track-name">USB Aşk</span>
+                                <span class="track-duration">3:52</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lyrics Section -->
+    <section id="lyrics" class="lyrics">
+        <div class="container">
+            <h2 class="section-title">Şarkı Sözleri</h2>
+            
+            <div class="lyrics-grid">
+                <div class="lyrics-card">
+                    <h3 class="lyrics-title">Boğaz'da Sabah</h3>
+                    <div class="lyrics-content">Sabahın ilk ışıkları
+Boğaz'ın sularında dans ediyor
+Martılar çığlık atıyor
+Yeni bir gün başlıyor
+
+İstanbul uyanıyor
+Rüyalardan gerçeğe
+Her köşede bir hikaye
+Her sokakta bir aşk
+
+Boğaz'da sabah
+Denizde yansıyan güneş
+Şehirde yaşanan hayat
+Her anı bir müzik</div>
+                </div>
+
+                <div class="lyrics-card">
+                    <h3 class="lyrics-title">Galata Kulesi</h3>
+                    <div class="lyrics-content">Galata Kulesi gökyüzünde
+Yüzyılların tanığı
+İstanbul'un kalbi
+Her taşında bir sır
+
+Yukarıdan bakıyorum
+Şehir ayaklarımın altında
+Boğaz mavi bir şerit
+Gökdelenler dans ediyor
+
+Galata Kulesi
+Zamanın ötesinde
+İstanbul'un ruhu
+Her bakışta bir melodi</div>
+                </div>
+
+                <div class="lyrics-card">
+                    <h3 class="lyrics-title">Online Sevda</h3>
+                    <div class="lyrics-content">Ekranın karşısında
+Seninle konuşuyorum
+Mesajlar uçuyor
+Aşkımız dijital
+
+WiFi bağlantısı
+Kalplerimizi birleştiriyor
+Uzaktan yakından
+Sevdamız online
+
+Online sevda
+Dijital aşk
+Ekranda görüyorum
+Seni her gece</div>
+                </div>
+
+                <div class="lyrics-card">
+                    <h3 class="lyrics-title">Kapadokya Synthesizer</h3>
+                    <div class="lyrics-content">Kapadokya'nın peri bacaları
+Elektronik seslerle dans ediyor
+Geleneksel melodiler
+Modern ritimlerle buluşuyor
+
+Synthesizer çalıyor
+Peri bacalarında yankılanıyor
+Eski ile yeni
+Müzikte birleşiyor
+
+Kapadokya synthesizer
+Geçmişin geleceği
+Müziğin büyüsü
+Her notada bir hikaye</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Atletik Bezelye ile İletişim</h2>
+            <p>Müzik yolculuğunu takip edin ve son çalışmalarından haberdar olun</p>
+            
+            <div class="social-links">
+                <a href="https://open.spotify.com/artist/example" target="_blank" title="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                <a href="https://instagram.com/atletikbezelye" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/atletikbezelye" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://twitter.com/atletikbezelye" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:atletik@example.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
-                originalConsoleLog.apply(console, args);
-            };
-            
-            // Welcome message for curious developers! 🎉
-            setTimeout(() => {
-                console.log('%c🎨 Welcome to Oğuzhan\'s Portfolio!', 'color: #2c3e50; font-size: 18px; font-weight: bold;');
-                console.log('%c🌟 Built with React, TypeScript, and lots of ☕', 'color: #34495e; font-size: 14px;');
-                console.log('%c🎯 Check out the mobile optimizations and PWA features!', 'color: #7f8c8d; font-size: 12px;');
-            }, 1000);
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Console welcome message
+        console.log('%c🎵 Atletik Bezelye\'nin Müzik Sayfasına Hoş Geldiniz!', 'color: #e91e63; font-size: 18px; font-weight: bold;');
+        console.log('%c🎶 Son şarkılarını keşfedin ve müzik yolculuğunu takip edin', 'color: #f06292; font-size: 14px;');
+        console.log('%c🎤 Müzik severler için sevgiyle yapıldı', 'color: #ff5722; font-size: 12px;');
     </script>
 </body>
 </html>
