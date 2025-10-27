@@ -24,7 +24,7 @@
         "startDate": "2024",
         "description": "Intelligent and Real Time Transportation Systems ",
         "images": [
-          "/assets/images/projects/initSe.png"
+          "/Developer/assets/images/initse.png"
         ],
         "url": "",
         "technologies": [
@@ -51,7 +51,7 @@
         "startDate": "2022",
         "description": "Web-Portal for onlineislemler.turktelekom.com.tr/",
         "images": [
-          "/assets/images/projects/TurkTelekom.png"
+          "/Developer/assets/images/turktelekom.png"
         ],
         "url": "",
         "technologies": [
@@ -82,8 +82,8 @@
         "startDate": "2022",
         "description": "E-commerce website for www.jltwinsshop.com",
         "images": [
-          "/assets/images/projects/JL - Logo.jpg",
-          "/assets/images/projects/JL - Cover.jpg"
+          "/Developer/assets/images/jl_logo.jpg",
+          "/Developer/assets/images/jl_cover.jpg"
         ],
         "url": "",
         "technologies": [
@@ -114,7 +114,7 @@
         "startDate": "2021",
         "description": "Graduation project - It brings together local photographers and customers and exchanges data through the system.",
         "images": [
-          "/assets/images/projects/Fotografcim - Logo.png"
+          "/Developer/assets/images/fotografcim_logo.png"
         ],
         "url": "",
         "technologies": [
@@ -145,8 +145,8 @@
         "startDate": "2020",
         "description": "It enables companies in the logistics sector to report the goods they transport to the Turkey Ministry of Transport. I used Java, SpringBoot, Hibernate and ThymeLeaf as backend developer in this project. MySql was used as the database. On the front-end, I actively developed Html5, JavaScript, Bootstrap.",
         "images": [
-          "/assets/images/projects/Uetds - Logo.png",
-          "/assets/images/projects/Ulastirma - Logo.png"
+          "/Developer/assets/images/uetds_logo.png",
+          "/Developer/assets/images/ulastirma_logo.png"
         ],
         "url": "https://github.com",
         "technologies": [
@@ -181,7 +181,7 @@
         "startDate": "2020",
         "description": "Accounting Project for Company in England. In this project, I used Java, SpringBoot, Hibernate and Phyton languages as back-end developer. When necessary, I made improvements on the front-end side.",
         "images": [
-          "/assets/images/projects/OverCatch - Logo.png"
+          "/Developer/assets/images/overcatch_logo.png"
         ],
         "url": "https://github.com",
         "technologies": [
@@ -218,7 +218,7 @@
         "startDate": "December 2023",
         "description": "",
         "images": [
-          "/assets/images/certificates/AWS - Completion.png"
+          "/Developer/assets/images/aws_completion.png"
         ],
         "url": "",
         "technologies": [
@@ -233,7 +233,7 @@
         "startDate": "April 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/AWS - Technical Essentials.jpg"
+          "/Developer/assets/images/aws_technical_essentials.jpg"
         ],
         "url": "",
         "technologies": [
@@ -248,12 +248,12 @@
         "startDate": "November 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/ISO 27001 - 1.png",
-          "/assets/images/certificates/Yöneticiliğe İlk Adım-1.png",
-          "/assets/images/certificates/İnovasyon Kültürü-1.png",
-          "/assets/images/certificates/İş Dünyasında İnovasyon-1.png",
-          "/assets/images/certificates/Sporda ve İş Hayatında Liderlik-1.png",
-          "/assets/images/certificates/Yaratıcı Düşünme ve İnovasyon-1.png"
+          "/Developer/assets/images/iso_27001_1.png",
+          "/Developer/assets/images/yoneticilige_ilk_adim_1.png",
+          "/Developer/assets/images/inovasyon_kulturu_1.png",
+          "/Developer/assets/images/is_dunyasinda_inovasyon_1.png",
+          "/Developer/assets/images/sporda_ve_is_hayatinda_liderlik_1.png",
+          "/Developer/assets/images/yaratici_dusunme_ve_inovasyon_1.png"
         ],
         "url": "",
         "technologies": [
@@ -268,7 +268,7 @@
         "startDate": "August 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/Turkcell - Java101.png"
+          "/Developer/assets/images/turkcell_java101.png"
         ],
         "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
         "technologies": [
@@ -283,7 +283,7 @@
         "startDate": "November 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/Turkcell - Java201.png"
+          "/Developer/assets/images/turkcell_java201.png"
         ],
         "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
         "technologies": [
@@ -298,7 +298,7 @@
         "startDate": "December 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/Turkcell - Java301.png"
+          "/Developer/assets/images/turkcell_java301.png"
         ],
         "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
         "technologies": [
@@ -313,7 +313,7 @@
         "startDate": "January 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/Ileri Java.png"
+          "/Developer/assets/images/ileri_java.png"
         ],
         "url": "",
         "technologies": [
@@ -328,7 +328,7 @@
         "startDate": "February 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/React.png"
+          "/Developer/assets/images/react.png"
         ],
         "url": "",
         "technologies": [
@@ -343,7 +343,7 @@
         "startDate": "March 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/agTekno.png"
+          "/Developer/assets/images/agtekno.png"
         ],
         "url": "",
         "technologies": [
@@ -358,7 +358,7 @@
         "startDate": "February 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/Sertifika - N0AD1644149473M0EBM6D-1.jpg"
+          "/Developer/assets/images/sertifika_n0ad1644149473m0ebm6d_1.jpg"
         ],
         "url": "",
         "technologies": [
@@ -373,7 +373,7 @@
         "startDate": "February 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/Sertifika - M2N3V164501351804-1.jpg"
+          "/Developer/assets/images/sertifika_m2n3v164501351804_1.jpg"
         ],
         "url": "",
         "technologies": [
@@ -388,7 +388,7 @@
         "startDate": "February 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/Sertifika - ADD638316452848634BA70-1.jpg"
+          "/Developer/assets/images/sertifika_add638316452848634ba70_1.jpg"
         ],
         "url": "",
         "technologies": [
@@ -403,7 +403,7 @@
         "startDate": "January 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/AI Hub data.png"
+          "/Developer/assets/images/ai_hub_data.png"
         ],
         "url": "https://globalaihub.com/members/obilginozi/",
         "technologies": [
@@ -418,7 +418,7 @@
         "startDate": "August 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/AI Hub mak.png"
+          "/Developer/assets/images/ai_hub_mak.png"
         ],
         "url": "https://globalaihub.com/members/obilginozi/",
         "technologies": [
@@ -433,7 +433,7 @@
         "startDate": "September 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/AI Hub deep.png"
+          "/Developer/assets/images/ai_hub_deep.png"
         ],
         "url": "https://globalaihub.com/members/obilginozi/",
         "technologies": [
@@ -448,7 +448,7 @@
         "startDate": "November 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/AI Hub ai.png"
+          "/Developer/assets/images/ai_hub_ai.png"
         ],
         "url": "https://globalaihub.com/members/obilginozi/",
         "technologies": [
@@ -463,7 +463,7 @@
         "startDate": "November 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/AI Hub hyper.png"
+          "/Developer/assets/images/ai_hub_hyper.png"
         ],
         "url": "https://globalaihub.com/members/obilginozi/",
         "technologies": [
@@ -478,7 +478,7 @@
         "startDate": "September 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/AI Hub git.png"
+          "/Developer/assets/images/ai_hub_git.png"
         ],
         "url": "https://globalaihub.com/members/obilginozi/",
         "technologies": [
@@ -493,7 +493,7 @@
         "startDate": "September 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/Turkcell - Web Programlama 101.png"
+          "/Developer/assets/images/turkcell_web_programlama_101.png"
         ],
         "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
         "technologies": [
@@ -508,7 +508,7 @@
         "startDate": "September 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/Turkcell - Web Programlama 201.png"
+          "/Developer/assets/images/turkcell_web_programlama_201.png"
         ],
         "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
         "technologies": [
@@ -523,7 +523,7 @@
         "startDate": "October 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/Turkcell - Web Programlama 301.png"
+          "/Developer/assets/images/turkcell_web_programlama_301.png"
         ],
         "url": "https://gelecegiyazanlar.turkcell.com.tr/kisi/obilginozi",
         "technologies": [
@@ -538,7 +538,7 @@
         "startDate": "May 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/l4aAMBv4.png"
+          "/Developer/assets/images/l4aambv4.png"
         ],
         "url": "",
         "technologies": [
@@ -553,7 +553,7 @@
         "startDate": "May 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/EYONDmR5.png"
+          "/Developer/assets/images/eyondmr5.png"
         ],
         "url": "",
         "technologies": [
@@ -568,7 +568,7 @@
         "startDate": "May 2021",
         "description": "",
         "images": [
-          "/assets/images/certificates/MYAE7MOY.png"
+          "/Developer/assets/images/myae7moy.png"
         ],
         "url": "",
         "technologies": [
@@ -583,7 +583,7 @@
         "startDate": "February 2022",
         "description": "",
         "images": [
-          "/assets/images/certificates/Sertifika - 1NA06VD16444426532VVM5-1.jpg"
+          "/Developer/assets/images/sertifika_1na06vd16444426532vvm5_1.jpg"
         ],
         "url": "",
         "technologies": [
@@ -598,7 +598,7 @@
         "startDate": "November 2020",
         "description": "",
         "images": [
-          "/assets/images/certificates/BBC - Pronunciation.png"
+          "/Developer/assets/images/bbc_pronunciation.png"
         ],
         "url": "",
         "technologies": [
@@ -613,7 +613,7 @@
         "startDate": "October 2012",
         "description": "",
         "images": [
-          "/assets/images/certificates/BursaTSO.jpg"
+          "/Developer/assets/images/bursatso.jpg"
         ],
         "url": "",
         "technologies": [
@@ -628,7 +628,7 @@
         "startDate": "August 2014",
         "description": "",
         "images": [
-          "/assets/images/certificates/EKAD.jpg"
+          "/Developer/assets/images/ekad.jpg"
         ],
         "url": "",
         "technologies": [

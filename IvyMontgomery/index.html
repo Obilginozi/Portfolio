@@ -14,7 +14,7 @@
     <meta property="og:description" content="Dublin-based Irish vocalist creating hauntingly melancholic acoustic music. Singer-songwriter with ethereal sound, poetic lyrics, and stripped-down arrangements. Listen to Gloomery album."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://oguzhanbilgin.com/IvyMontgomery"/>
-    <meta property="og:image" content="https://oguzhanbilgin.com/IvyMontgomery/assets/images/Ivy Montgomery Profile Photo.jpg"/>
+    <meta property="og:image" content="https://oguzhanbilgin.com/IvyMontgomery/assets/images/ivy_montgomery_profile_photo.jpg"/>
     <meta property="og:site_name" content="Ivy Montgomery Music"/>
     <meta property="og:locale" content="en_US"/>
     
@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="Ivy Montgomery | Irish Vocalist & Singer-Songwriter"/>
     <meta name="twitter:description" content="Dublin-based Irish vocalist known for hauntingly melancholic acoustic sound. Creating ethereal indie music with poetic storytelling."/>
-    <meta name="twitter:image" content="https://oguzhanbilgin.com/IvyMontgomery/assets/images/Ivy Montgomery Profile Photo.jpg"/>
+    <meta name="twitter:image" content="https://oguzhanbilgin.com/IvyMontgomery/assets/images/ivy_montgomery_profile_photo.jpg"/>
     <meta name="twitter:creator" content="@ivymontgomery"/>
     
     <!-- Mobile App Meta Tags -->
@@ -32,25 +32,17 @@
     <meta name="apple-mobile-web-app-title" content="Ivy Montgomery"/>
     
     <!-- Favicon and Icons -->
-    <link rel="icon" type="image/png" href="assets/images/retro mic.png"/>
-    <link rel="shortcut icon" type="image/png" href="assets/images/retro mic.png"/>
-    <link rel="apple-touch-icon" href="assets/images/retro mic.png"/>
+    <link rel="icon" type="image/png" href="/IvyMontgomery/assets/images/ivy_montgomery_tab.png"/>
+    <link rel="shortcut icon" type="image/png" href="/IvyMontgomery/assets/images/ivy_montgomery_tab.png"/>
+    <link rel="apple-touch-icon" href="/IvyMontgomery/assets/images/ivy_montgomery_tab.png"/>
     
     <!-- Manifest for PWA -->
-    <link rel="manifest" href="/manifest.json"/>
+    <link rel="manifest" href="/IvyMontgomery/manifest.json"/>
     
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    
-    <!-- Main Stylesheet -->
-    <link href="/assets/css/main.5f76c29b.css" rel="stylesheet">
-    
-    <!-- Mobile Optimizations -->
-    <link href="/assets/css/mobile.css" rel="stylesheet">
-    
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="/assets/css/main.5f76c29b.css" as="style">
+   
     
     <style>
         /* Global focus removal - must be first */
@@ -186,7 +178,7 @@
 
         /* Header Section */
         .header {
-            background: linear-gradient(rgba(255, 153, 64, 0.2), rgba(255, 140, 0, 0.2)), url('assets/images/IvyMontgomertBack.png');
+            background: linear-gradient(rgba(255, 153, 64, 0.2), rgba(255, 140, 0, 0.2)), url('/IvyMontgomery/assets/images/ivy_montgomery_banner.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -1641,7 +1633,7 @@
             <div class="contact-corporate">
                 <div class="contact-profile">
                     <div class="profile-photo">
-                        <img src="assets/images/Ivy Montgomery Profile Photo.jpg" alt="Ivy Montgomery" class="musician-photo">
+                        <img src="/IvyMontgomery/assets/images/ivy_montgomery_profile_photo.jpg" alt="Ivy Montgomery" class="musician-photo">
                     </div>
                     <div class="profile-info">
                         <h3 class="musician-name">Ivy Montgomery</h3>
@@ -1690,18 +1682,14 @@
     
     <!-- Scripts -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="/assets/js/mobile.js"></script>
     
     <!-- Mobile Touch Events Support -->
     <!-- Interactive Lyrics Script -->
     <script>
         // Album toggle functionality
         function toggleAlbum(albumId) {
-            console.log('Toggling album:', albumId);
-            
             // Get all album cards
             const allAlbumCards = document.querySelectorAll('.album-card');
-            console.log('Found', allAlbumCards.length, 'album cards');
             
             // Find the target album card
             let targetAlbumCard = null;
@@ -1717,34 +1705,24 @@
                 return;
             }
             
-            console.log('Target album card found:', targetAlbumCard);
-            
             // Check if target album is currently active
             const isCurrentlyActive = targetAlbumCard.classList.contains('active');
-            console.log('Target album is currently active:', isCurrentlyActive);
             
             // First, close ALL albums
             allAlbumCards.forEach(card => {
                 card.classList.remove('active');
-                console.log('Closed album:', card.querySelector('.album-title')?.textContent);
             });
             
             // Then, if the target wasn't active, open it
             if (!isCurrentlyActive) {
                 targetAlbumCard.classList.add('active');
-                console.log('Opened album:', albumId);
-            } else {
-                console.log('Album was already active, now closed');
             }
         }
 
         // Song lyrics toggle functionality
         function toggleLyrics(songId) {
-            console.log('Toggling lyrics for song:', songId);
-            
             // Get all song lyrics containers
             const allLyricsContainers = document.querySelectorAll('.song-lyrics');
-            console.log('Found', allLyricsContainers.length, 'lyrics containers');
             
             // Find the target lyrics container
             const targetLyricsContainer = document.getElementById(songId);
@@ -1760,12 +1738,8 @@
                 return;
             }
             
-            console.log('Target lyrics container found:', targetLyricsContainer);
-            console.log('Target song item found:', targetSongItem);
-            
             // Check if target song is currently active
             const isCurrentlyActive = targetLyricsContainer.classList.contains('active');
-            console.log('Target song is currently active:', isCurrentlyActive);
             
             // First, close ALL song lyrics
             allLyricsContainers.forEach(lyrics => {
@@ -1774,26 +1748,20 @@
                 if (songItem) {
                     songItem.classList.remove('active');
                 }
-                console.log('Closed lyrics for song');
             });
             
             // Then, if the target wasn't active, open it
             if (!isCurrentlyActive) {
                 targetLyricsContainer.classList.add('active');
                 targetSongItem.classList.add('active');
-                console.log('Opened lyrics for song:', songId);
-            } else {
-                console.log('Song was already active, now closed');
             }
         }
 
         // Initialize all albums as expanded on page load
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('Initializing albums as expanded');
             const allAlbumCards = document.querySelectorAll('.album-card');
             allAlbumCards.forEach(card => {
                 card.classList.add('active');
-                console.log('Expanded album:', card.querySelector('.album-title')?.textContent);
             });
         });
 
@@ -1845,49 +1813,15 @@
             document.body.classList.add('mobile-device');
         }
         
-            // Register Service Worker - Override CRA default
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                    // Prevent CRA default service worker registration
-                    window.addEventListener('beforeunload', function() {
-                        // This prevents CRA from registering its default service worker
-                    });
-                    
-                    navigator.serviceWorker.register('/service-worker.js')
-                        .then(function(registration) {
-                            
-                            // Handle service worker updates silently
-                            registration.addEventListener('updatefound', function() {
-                                const newWorker = registration.installing;
-                                newWorker.addEventListener('statechange', function() {
-                                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                        // New content is available, but don't show CRA messages
-                                        console.log('🔄 Portfolio: New content available - updating silently');
-                                        newWorker.postMessage({ action: 'skipWaiting' });
-                                    }
-                                });
-                            });
-                        })
-                        .catch(function(err) {
-                            console.error('❌ Portfolio: Service Worker registration failed:', err);
-                        });
-                });
-            } else {
-                console.log('⚠️ Portfolio: Service Worker not supported in this browser');
-            }
-            
-            // Override CRA service worker messages
-            const originalConsoleLog = console.log;
-            console.log = function(...args) {
-                const message = args.join(' ');
-                if (message.includes('This web app is being served cache-first by a service worker') || 
-                    message.includes('https://bit.ly/CRA-PWA') ||
-                    message.includes('New content is available and will be used when all tabs for this page are closed')) {
-                    // Suppress CRA service worker messages
-                    return;
+        // Unregister any existing service workers
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                for(let registration of registrations) {
+                    registration.unregister();
+                    console.log('✅ Service Worker unregistered');
                 }
-                originalConsoleLog.apply(console, args);
-            };
+            });
+        }
         
         // Global URL interceptor to fix malformed image URLs
         function interceptImageRequests() {

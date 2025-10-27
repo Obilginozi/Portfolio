@@ -33,19 +33,12 @@
         <priority>0.7</priority>
     </url>
 
-    <!-- Developer Sub-pages -->
+    <!-- Privacy Policy -->
     <url>
-        <loc>https://oguzhanbilgin.com/Developer/AtletikBezelye</loc>
-        <lastmod>2025-02-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://oguzhanbilgin.com/Developer/IvyMontgomery</loc>
-        <lastmod>2025-02-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://oguzhanbilgin.com/Privacy_Policy</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
     </url>
 
 </urlset>

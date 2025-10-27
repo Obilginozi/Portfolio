@@ -14,7 +14,7 @@
     <meta property="og:description" content="Dublin-based Full-Stack Developer with 4+ years experience in Java, Spring Boot, React, AWS. Specializing in backend development, cloud architecture, and modern web applications."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://oguzhanbilgin.com"/>
-    <meta property="og:image" content="https://oguzhanbilgin.com/assets/images/ProfilePicture.png"/>
+    <meta property="og:image" content="https://oguzhanbilgin.com/Developer/assets/images/profilepicture.png"/>
     <meta property="og:site_name" content="Oğuzhan Alfred Bilgin Portfolio"/>
     <meta property="og:locale" content="en_US"/>
     
@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="Oğuzhan Alfred Bilgin | Full-Stack Developer"/>
     <meta name="twitter:description" content="Dublin-based Full-Stack Developer specializing in Java, Spring Boot, React, AWS. 4+ years experience in software development and cloud architecture."/>
-    <meta name="twitter:image" content="https://oguzhanbilgin.com/assets/images/ProfilePicture.png"/>
+    <meta name="twitter:image" content="https://oguzhanbilgin.com/Developer/assets/images/profilepicture.png"/>
     <meta name="twitter:creator" content="@oguzhanbilgin"/>
     
     <!-- Mobile App Meta Tags -->
@@ -32,8 +32,8 @@
     <meta name="apple-mobile-web-app-title" content="Oğuzhan Bilgin"/>
     
     <!-- Favicon and Icons -->
-    <link rel="icon" href="/favicon.ico"/>
-    <link rel="apple-touch-icon" href="./assets/images/ProfilePicture.png"/>
+    <link rel="icon" href="/Developer/assets/images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="/Developer/assets/images/profilepicture.png"/>
     
     <!-- Manifest for PWA -->
     <link rel="manifest" href="./manifest.json"/>
@@ -45,8 +45,6 @@
     <!-- Main Stylesheet -->
     <link href="./assets/css/main.5f76c29b.css" rel="stylesheet">
     
-    <!-- Mobile Optimizations -->
-    <link href="./assets/css/mobile.css" rel="stylesheet">
     
     <!-- Light Theme Fix for About Section -->
     <style>
@@ -114,7 +112,6 @@
     <!-- Scripts -->
     <script defer="defer" src="./assets/js/main.2c90698c.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="./assets/js/mobile.js"></script>
     
     <!-- Mobile Touch Events Support -->
     <script>
@@ -133,88 +130,7 @@
             document.body.classList.add('mobile-device');
         }
         
-            // Register Service Worker - Override CRA default
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                    // Prevent CRA default service worker registration
-                    window.addEventListener('beforeunload', function() {
-                        // This prevents CRA from registering its default service worker
-                    });
-                    
-                    navigator.serviceWorker.register('/service-worker.js')
-                        .then(function(registration) {
-                            
-                            // Handle service worker updates silently
-                            registration.addEventListener('updatefound', function() {
-                                const newWorker = registration.installing;
-                                newWorker.addEventListener('statechange', function() {
-                                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                        // New content is available, but don't show CRA messages
-                                        console.log('🔄 Portfolio: New content available - updating silently');
-                                        newWorker.postMessage({ action: 'skipWaiting' });
-                                    }
-                                });
-                            });
-                        })
-                        .catch(function(err) {
-                            console.error('❌ Portfolio: Service Worker registration failed:', err);
-                        });
-                });
-            } else {
-                console.log('⚠️ Portfolio: Service Worker not supported in this browser');
-            }
-            
-            // Override CRA service worker messages
-            const originalConsoleLog = console.log;
-            console.log = function(...args) {
-                const message = args.join(' ');
-                if (message.includes('This web app is being served cache-first by a service worker') || 
-                    message.includes('https://bit.ly/CRA-PWA') ||
-                    message.includes('New content is available and will be used when all tabs for this page are closed')) {
-                    // Suppress CRA service worker messages
-                    return;
-                }
-                originalConsoleLog.apply(console, args);
-            };
-            
-            // Global URL interceptor to fix malformed image URLs
-            function interceptImageRequests() {
-                const originalCreateElement = document.createElement;
-                document.createElement = function(tagName) {
-                    const element = originalCreateElement.call(this, tagName);
-                    if (tagName.toLowerCase() === 'img') {
-                        const originalSetAttribute = element.setAttribute;
-                        element.setAttribute = function(name, value) {
-                            if (name === 'src' && typeof value === 'string') {
-                                // Fix malformed image URLs
-                                if (value.includes('/images//assets/images/')) {
-                                    value = value.replace('/images//assets/images/', '/assets/images/');
-                                } else if (value.includes('/images/assets/images/')) {
-                                    value = value.replace('/images/assets/images/', '/assets/images/');
-                                } else if (value.includes('/Developer/images//assets/images/')) {
-                                    value = value.replace('/Developer/images//assets/images/', '/assets/images/');
-                                } else if (value.includes('/Developer/images/assets/images/')) {
-                                    value = value.replace('/Developer/images/assets/images/', '/assets/images/');
-                                } else if (value.includes('/IvyMontgomery/images//assets/images/')) {
-                                    value = value.replace('/IvyMontgomery/images//assets/images/', '/assets/images/');
-                                } else if (value.includes('/IvyMontgomery/images/assets/images/')) {
-                                    value = value.replace('/IvyMontgomery/images/assets/images/', '/assets/images/');
-                                } else if (value.includes('/AtletikBezelye/images//assets/images/')) {
-                                    value = value.replace('/AtletikBezelye/images//assets/images/', '/assets/images/');
-                                } else if (value.includes('/AtletikBezelye/images/assets/images/')) {
-                                    value = value.replace('/AtletikBezelye/images/assets/images/', '/assets/images/');
-                                }
-                            }
-                            return originalSetAttribute.call(this, name, value);
-                        };
-                    }
-                    return element;
-                };
-            }
-            
-            // Initialize URL interceptor
-            interceptImageRequests();
-            
+        
             // Welcome message for curious developers! 🎉
             setTimeout(() => {
                 console.log('%c🎉 Hey there, curious developer!', 'color: #ff6b6b; font-size: 16px; font-weight: bold;');

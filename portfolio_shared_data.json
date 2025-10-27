@@ -20,10 +20,9 @@
           "class": "fas fa-solid fa-barcode"
         }
       ],
-      "image": "/assets/images/ProfilePicture.png",
-      "imageA": "/assets/images/LoginBlank.png",
-      "imageAa": "/assets/images/LoginBlankA.png",
-      "imageB": "/assets/images/ProfilePicture.png"
+      "profile_picture": "/Developer/assets/images/profilepicture.png",
+      "background_image": "/Developer/assets/images/background_image.png",
+      "background_image_mobile": "/Developer/assets/images/background_image_mobile.png"
     },
     "skills": {
       "icons": [

@@ -4,18 +4,18 @@
   "description": "Bursa merkezli rock grubu - Güçlü tenor vokal ve enerjik sound",
   "icons": [
     {
-      "src": "assets/images/images-removebg-preview.png",
+      "src": "assets/images/atletik_bezelye_tab.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     },
     {
-      "src": "assets/images/images-removebg-preview.png",
+      "src": "assets/images/atletik_bezelye_tab.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/images/images-removebg-preview.png",
+      "src": "assets/images/atletik_bezelye_tab.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -31,7 +31,7 @@
   "categories": ["music", "rock", "band"],
   "screenshots": [
     {
-      "src": "assets/images/images-removebg-preview.png",
+      "src": "assets/images/atletik_bezelye_tab.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"
