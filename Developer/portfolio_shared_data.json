@@ -18,6 +18,11 @@
           "name": "bio",
           "url": "https://obilginozi.bio.link/",
           "class": "fas fa-solid fa-barcode"
+        },
+        {
+          "name": "coffee",
+          "url": "https://buymeacoffee.com/obilginozi",
+          "class": "fas fa-coffee"
         }
       ],
       "profile_picture": "/Developer/assets/images/profilepicture.png"

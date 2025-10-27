@@ -15,6 +15,11 @@
           "class": "fab fa-linkedin"
         },
         {
+          "name": "coffee",
+          "url": "https://buymeacoffee.com/obilginozi",
+          "class": "fas fa-coffee"
+        },
+        {
           "name": "bio",
           "url": "https://obilginozi.bio.link/",
           "class": "fas fa-solid fa-barcode"
