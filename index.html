@@ -42,6 +42,33 @@
     <!-- Main Stylesheet -->
     <link href="/Developer/assets/css/main.5f76c29b.css" rel="stylesheet">
     
+    <!-- Background Image Styles -->
+    <style>
+        body {
+            background-image: url('/Developer/assets/images/background_image.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        /* Mobile background image */
+        @media (max-width: 768px) {
+            body {
+                background-image: url('/Developer/assets/images/background_image_mobile.png');
+            }
+        }
+        
+        /* Ensure root element has solid background */
+        #root {
+            background-color: rgba(255, 255, 255);
+        }
+        
+        body[data-theme="dark"] #root {
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+    
     <!-- Preload Critical Resources -->
     <link rel="preload" href="/Developer/assets/js/main.2c90698c.js" as="script">
     <link rel="preload" href="/Developer/assets/css/main.5f76c29b.css" as="style">
