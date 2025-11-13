@@ -44,6 +44,13 @@
     
     <!-- Main Stylesheet -->
     <link href="./assets/css/main.5f76c29b.css" rel="stylesheet">
+    
+    <!-- Preload critical images for mobile -->
+    <link rel="preload" as="image" href="./assets/images/background_image_mobile.png" media="(max-width: 768px)">
+    <link rel="preload" as="image" href="./assets/images/profilepicture.png">
+    
+    <!-- Prefetch images for better performance -->
+    <link rel="prefetch" as="image" href="./assets/images/background_image.png">
 </head>
 <body data-theme="light">
     <noscript>
@@ -61,6 +68,25 @@
     
     <!-- Mobile Touch Events Support -->
     <script>
+        // Preload critical images immediately (especially important for iOS)
+        (function() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            const imagesToPreload = [
+                './assets/images/profilepicture.png'
+            ];
+            
+            // Add mobile background if on mobile device
+            if (isMobile || window.innerWidth <= 768) {
+                imagesToPreload.push('./assets/images/background_image_mobile.png');
+            }
+            
+            // Force preload images
+            imagesToPreload.forEach(function(src) {
+                const img = new Image();
+                img.src = src;
+            });
+        })();
+        
         // Prevent zoom on double tap for iOS
         let lastTouchEnd = 0;
         document.addEventListener('touchend', function (event) {
