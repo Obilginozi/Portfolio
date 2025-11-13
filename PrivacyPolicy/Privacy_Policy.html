@@ -259,7 +259,7 @@
         
         <div class="content">
             <div class="section">
-                <p><strong>Last Updated:</strong> October 21, 2025</p>
+                <p><strong>Last Updated:</strong> December 2025</p>
                 <p><strong>App:</strong> Dieter Clock for iOS and macOS</p>
                 <p><strong>Developer:</strong> Oguzhan Bilgin</p>
             </div>
@@ -289,6 +289,9 @@
                     <li>Send any data to external servers</li>
                     <li>Use advertising networks or SDKs</li>
                 </ul>
+                <div class="highlight">
+                    <p><strong>Note:</strong> The app may request optional calendar access if you choose to enable the "Add to Apple Calendar" feature for habit tracking. This permission is entirely optional and user-controlled. See the "Optional Calendar Access" section below for details.</p>
+                </div>
                 
                 <h3>Information Stored Locally</h3>
                 <p>All data is stored <strong>locally on your device only</strong> and includes:</p>
@@ -296,12 +299,20 @@
                     <li><strong>Timer Settings</strong>: Your preferences for Pomodoro, Countdown, and Stopwatch timers</li>
                     <li><strong>App Preferences</strong>: Theme selection, display options, and general settings</li>
                     <li><strong>Timer State</strong>: Current timer status to maintain continuity when you close and reopen the app</li>
+                    <li><strong>Habit Data</strong>: If you use the habit tracking feature, your habits, completion dates, and streaks are stored locally</li>
                 </ul>
                 <p>This information is stored using iOS/macOS UserDefaults and <strong>never leaves your device</strong>.</p>
                 
-                <div class="highlight">
-                    <p><strong>Note:</strong> All data is stored locally on your device and never transmitted to external servers or shared with third parties.</p>
-                </div>
+                <h3>Optional Calendar Access</h3>
+                <p>If you choose to enable the "Add to Apple Calendar" feature for habit tracking:</p>
+                <ul>
+                    <li><strong>Calendar Permission</strong>: The app will request access to your calendar to create reminder events</li>
+                    <li><strong>What We Access</strong>: The app only creates new calendar events in a dedicated "Dieter Calendar" that it creates in your calendar app</li>
+                    <li><strong>What We Don't Access</strong>: We do not read, modify, or delete any existing calendar events or data</li>
+                    <li><strong>Data Storage</strong>: Calendar events are stored in your device's local calendar and synced through your iCloud account (if enabled). We do not have access to this data</li>
+                    <li><strong>User Control</strong>: You can revoke calendar access at any time through iOS Settings, and you can delete the "Dieter Calendar" or individual events at any time</li>
+                    <li><strong>Privacy</strong>: Calendar access is completely optional. The app works fully without calendar access, and you can use all other features without granting this permission</li>
+                </ul>
             </div>
             
             <div class="section">
@@ -311,7 +322,13 @@
                     <li>Remember your timer preferences</li>
                     <li>Maintain your selected theme and appearance settings</li>
                     <li>Preserve timer state between app sessions</li>
+                    <li>Track your habits and completion streaks (if you use the habit tracking feature)</li>
                     <li>Provide you with a personalized experience</li>
+                </ul>
+                <p>If you enable calendar integration for habits:</p>
+                <ul>
+                    <li>Create calendar reminder events for your scheduled habits</li>
+                    <li>Help you remember to complete your habits through calendar notifications</li>
                 </ul>
             </div>
             
@@ -352,6 +369,8 @@
                     <li>You can delete all app data by deleting the application</li>
                     <li>Reinstalling the app will start with fresh, default settings</li>
                     <li>We have no access to your data and cannot retrieve it if deleted</li>
+                    <li>If you enabled calendar integration, you can delete the "Dieter Calendar" or individual events at any time through your calendar app</li>
+                    <li>Revoking calendar access in iOS Settings will prevent the app from creating new calendar events, but existing events will remain in your calendar until you manually delete them</li>
                 </ul>
             </div>
             
@@ -404,6 +423,7 @@
                     <li>We do not collect data</li>
                     <li>We only use UserDefaults for local preferences storage</li>
                     <li>We only use System Boot Time API for timer functionality</li>
+                    <li>We may request calendar access (EventKit) if you enable the optional calendar integration feature for habit tracking</li>
                 </ul>
             </div>
             
@@ -411,7 +431,7 @@
                 <div class="highlight">
                     <p style="font-size: 1.1em;">
                         <strong>Summary:</strong> Dieter Clock respects your privacy completely. We don't collect, store, transmit, 
-                        or share any personal information. Everything stays on your device, giving you complete privacy and control.
+                        or share any personal information. Everything stays on your device, giving you complete privacy and control. The app may optionally request calendar access for habit reminders, but this is entirely user-controlled and the app works fully without it.
                     </p>
                     <p style="margin-top: 15px; font-style: italic; color: #86868b;">
                         *"Less but Better" - including less data collection, for a better, more private experience.*
