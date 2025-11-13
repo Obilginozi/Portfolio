@@ -45,6 +45,33 @@
     <!-- Main Stylesheet -->
     <link href="./assets/css/main.5f76c29b.css" rel="stylesheet">
     
+    <!-- Background Image Styles -->
+    <style>
+        body {
+            background-image: url('./assets/images/background_image.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        /* Mobile background image */
+        @media (max-width: 768px) {
+            body {
+                background-image: url('./assets/images/background_image_mobile.png');
+            }
+        }
+        
+        /* Ensure root element has solid background */
+        #root {
+            background-color: rgba(255, 255, 255);
+        }
+        
+        body[data-theme="dark"] #root {
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+    
     <!-- Preload critical images for mobile -->
     <link rel="preload" as="image" href="./assets/images/background_image_mobile.png" media="(max-width: 768px)">
     <link rel="preload" as="image" href="./assets/images/profilepicture.png">
@@ -60,6 +87,11 @@
             <p>This portfolio requires JavaScript for the best experience.</p>
         </div>
     </noscript>
+    <!-- Hidden images to force iOS Safari to preload -->
+    <div style="position: absolute; width: 0; height: 0; overflow: hidden; opacity: 0;">
+        <img src="./assets/images/profilepicture.png" alt="" />
+        <img src="./assets/images/background_image_mobile.png" alt="" class="mobile-bg-preload" />
+    </div>
     <div id="root"></div>
     
     <!-- Scripts -->
@@ -80,11 +112,38 @@
                 imagesToPreload.push('./assets/images/background_image_mobile.png');
             }
             
-            // Force preload images
+            // Force preload images with error handling and retry for iOS
             imagesToPreload.forEach(function(src) {
                 const img = new Image();
+                img.onload = function() {
+                    // Image loaded successfully
+                };
+                img.onerror = function() {
+                    // Retry loading the image (iOS sometimes needs this)
+                    setTimeout(function() {
+                        const retryImg = new Image();
+                        retryImg.src = src;
+                    }, 100);
+                };
                 img.src = src;
+                
+                // Also try to load via link element for better iOS support
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'image';
+                link.href = src;
+                document.head.appendChild(link);
             });
+            
+            // Preload background image for CSS background-image
+            if (isMobile || window.innerWidth <= 768) {
+                const bgImg = new Image();
+                bgImg.onload = function() {
+                    // Force body to re-render background
+                    document.body.style.backgroundImage = 'url("./assets/images/background_image_mobile.png")';
+                };
+                bgImg.src = './assets/images/background_image_mobile.png';
+            }
         })();
         
         // Prevent zoom on double tap for iOS
