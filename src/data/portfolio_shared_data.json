@@ -1,0 +1,134 @@
+{
+    "basic_info": {
+      "name": "Oğuzhan Alfred Bilgin",
+      "titles": ["Computer Engineer", "Back-end Developer", "Java Developer", "Dev Account Manager", "Front-end Developer"],
+      "question": "Are you a developer?",
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/Obilginozi",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedIn",
+          "url": "https://www.linkedin.com/in/obilginozi/",
+          "class": "fab fa-linkedin"
+        },
+        {
+          "name": "coffee",
+          "url": "https://buymeacoffee.com/obilginozi",
+          "class": "fas fa-coffee"
+        },
+        {
+          "name": "bio",
+          "url": "https://obilginozi.bio.link/",
+          "class": "fas fa-solid fa-barcode"
+        }
+      ],
+      "profile_picture": "/images/profilepicture.png"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "Java",
+          "class": "devicon-java-plain",
+          "level": "80"
+        },
+        {
+          "name": "SpringBoot",
+          "class": "devicon-spring-plain",
+          "level": "75"
+        },
+        {
+          "name": "AWS",
+          "class": "devicon-amazonwebservices-original",
+          "level": "75"
+        },
+        {
+          "name": "Jquery",
+          "class": "devicon-jquery-plain",
+          "level": "75"
+        },
+        {
+          "name": "Oracle DB",
+          "class": "devicon-oracle-original",
+          "level": "60"
+        },
+        {
+          "name": "PostgreSql",
+          "class": "devicon-postgresql-plain",
+          "level": "60"
+        },
+        {
+          "name": "MySql",
+          "class": "devicon-mysql-plain",
+          "level": "60"
+        },
+        {
+          "name": "Docker",
+          "class": "devicon-docker-plain",
+          "level": "95"
+        },
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain",
+          "level": "90"
+        },
+        {
+          "name": "C++",
+          "class": "devicon-cplusplus-plain",
+          "level": "65"
+        },
+        {
+          "name": "Arduino",
+          "class": "devicon-arduino-plain",
+          "level": "65"
+        },
+        {
+          "name": "Git",
+          "class": "devicon-git-plain",
+          "level": "65"
+        },
+        {
+          "name": "GitHub",
+          "class": "devicon-github-original",
+          "level": "65"
+        },
+        {
+          "name": "Jira",
+          "class": "devicon-jira-plain",
+          "level": "65"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-original",
+          "level": "75"
+        },
+        {
+          "name": "Node.js",
+          "class": "devicon-nodejs-plain",
+          "level": "70"
+        }
+      ]
+    }
+}

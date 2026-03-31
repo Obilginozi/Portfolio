@@ -1,111 +1,34 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- Default Meta Tags (will be overridden per page via react-helmet) -->
     <title>Oğuzhan Alfred Bilgin | Portfolio</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"/>
-    <meta name="theme-color" content="#000000"/>
-    <meta name="description" content="Oğuzhan Alfred Bilgin - Full-Stack Developer Portfolio. Computer Engineer with 4+ years experience in Java, Spring Boot, React, and AWS."/>
-    <meta name="keywords" content="Oğuzhan Alfred Bilgin, Oğuzhan, Bilgin, Portfolio, CV, Developer, Java Developer, Backend Developer, Frontend Developer, Spring Boot, React, AWS, Dublin, Ireland"/>
-    <meta name="author" content="Oğuzhan Alfred Bilgin"/>
-    
-    <!-- Open Graph Meta Tags for Social Media -->
+    <meta name="description" content="Oğuzhan Alfred Bilgin - Full-Stack Developer Portfolio" />
     <meta property="og:title" content="Oğuzhan Alfred Bilgin | Portfolio"/>
-    <meta property="og:description" content="Full-Stack Developer Portfolio - Java, Spring Boot, React, AWS"/>
+    <meta property="og:description" content="Oğuzhan Alfred Bilgin - Full-Stack Developer Portfolio"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://oguzhanbilgin.com"/>
-    <meta property="og:image" content="https://oguzhanbilgin.com/Developer/assets/images/profilepicture.png"/>
     
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Oğuzhan Alfred Bilgin | Portfolio"/>
-    <meta name="twitter:description" content="Full-Stack Developer Portfolio - Java, Spring Boot, React, AWS"/>
-    <meta name="twitter:image" content="https://oguzhanbilgin.com/Developer/assets/images/profilepicture.png"/>
-    
-    <!-- Mobile App Meta Tags -->
-    <meta name="mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="apple-mobile-web-app-title" content="Oğuzhan Bilgin"/>
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Favicon and Icons -->
-    <link rel="icon" href="/Developer/assets/images/favicon.ico"/>
-    <link rel="apple-touch-icon" href="/Developer/assets/images/profilepicture.png"/>
-    
-    <!-- Manifest for PWA -->
-    <link rel="manifest" href="/manifest.json"/>
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
     
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
-    <!-- Main Stylesheet -->
-    <link href="/Developer/assets/css/main.5f76c29b.css" rel="stylesheet">
-    
-    <!-- Background Image Styles -->
-    <style>
-        body {
-            background-image: url('/Developer/assets/images/background_image.png');
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        
-        /* Mobile background image */
-        @media (max-width: 768px) {
-            body {
-                background-image: url('/Developer/assets/images/background_image_mobile.png');
-            }
-        }
-        
-        /* Ensure root element has solid background */
-        #root {
-            background-color: rgba(255, 255, 255);
-        }
-        
-        body[data-theme="dark"] #root {
-            background-color: rgba(0, 0, 0, 0.95);
-        }
-    </style>
-</head>
-<body data-theme="light">
-    <noscript>
-        <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
-            <h2>JavaScript Required</h2>
-            <p>You need to enable JavaScript to run this app.</p>
-            <p>This portfolio requires JavaScript for the best experience.</p>
-        </div>
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <div id="root"></div>
-    
-    <!-- Scripts -->
-    <script defer="defer" src="/Developer/assets/js/main.2c90698c.js"></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    
-    <!-- Mobile Touch Events Support -->
-    <script>
-        // Prevent zoom on double tap for iOS
-        let lastTouchEnd = 0;
-        document.addEventListener('touchend', function (event) {
-            const now = (new Date()).getTime();
-            if (now - lastTouchEnd <= 300) {
-                event.preventDefault();
-            }
-            lastTouchEnd = now;
-        }, false);
-        
-        // Add mobile class to body for CSS targeting
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            document.body.classList.add('mobile-device');
-        }
-        
-        // Welcome message for curious developers! 🎉
-        setTimeout(() => {
-            console.log('%c🎨 Welcome to Oğuzhan\'s Portfolio!', 'color: #2c3e50; font-size: 18px; font-weight: bold;');
-            console.log('%c🌟 Built with React, TypeScript, and lots of ☕', 'color: #34495e; font-size: 14px;');
-            console.log('%c🎯 Check out the mobile optimizations and PWA features!', 'color: #7f8c8d; font-size: 12px;');
-        }, 1000);
-    </script>
-</body>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
 </html>
