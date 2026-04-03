@@ -30,8 +30,48 @@
     "skills": {
       "icons": [
         {
+          "name": "Docker",
+          "class": "devicon-docker-plain",
+          "level": "95"
+        },
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain",
+          "level": "90"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-original",
+          "level": "85"
+        },
+        {
+          "name": "Claude AI",
+          "class": "devicon-openai-original",
+          "level": "85"
+        },
+        {
           "name": "Java",
           "class": "devicon-java-plain",
+          "level": "80"
+        },
+        {
+          "name": "Firebase",
+          "class": "devicon-firebase-plain",
           "level": "80"
         },
         {
@@ -50,9 +90,29 @@
           "level": "75"
         },
         {
-          "name": "Oracle DB",
-          "class": "devicon-oracle-original",
-          "level": "60"
+          "name": "Flutter",
+          "class": "devicon-flutter-plain",
+          "level": "75"
+        },
+        {
+          "name": "Swift",
+          "class": "devicon-swift-plain",
+          "level": "70"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "Google Cloud",
+          "class": "devicon-googlecloud-plain",
+          "level": "70"
+        },
+        {
+          "name": "C++",
+          "class": "devicon-cplusplus-plain",
+          "level": "65"
         },
         {
           "name": "PostgreSql",
@@ -65,58 +125,18 @@
           "level": "60"
         },
         {
-          "name": "Docker",
-          "class": "devicon-docker-plain",
-          "level": "95"
-        },
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "C++",
-          "class": "devicon-cplusplus-plain",
-          "level": "65"
-        },
-        {
-          "name": "Arduino",
-          "class": "devicon-arduino-plain",
-          "level": "65"
-        },
-        {
-          "name": "Centos",
-          "class": "devicon-centos-plain",
-          "level": "65"
-        },
-        {
-          "name": "File Zilla",
-          "class": "devicon-filezilla-plain",
-          "level": "65"
+          "name": "Oracle DB",
+          "class": "devicon-oracle-original",
+          "level": "60"
         },
         {
           "name": "Git",
           "class": "devicon-git-plain",
+          "level": "65"
+        },
+        {
+          "name": "GitHub",
+          "class": "devicon-github-original",
           "level": "65"
         },
         {
@@ -130,13 +150,13 @@
           "level": "65"
         },
         {
-          "name": "Slack",
-          "class": "devicon-slack-plain",
+          "name": "Intellij",
+          "class": "devicon-intellij-plain",
           "level": "65"
         },
         {
-          "name": "GitHub",
-          "class": "devicon-github-original",
+          "name": "Npm",
+          "class": "devicon-npm-original-wordmark",
           "level": "65"
         },
         {
@@ -150,23 +170,23 @@
           "level": "65"
         },
         {
+          "name": "Slack",
+          "class": "devicon-slack-plain",
+          "level": "65"
+        },
+        {
           "name": "Material UI",
           "class": "devicon-materialui-plain",
           "level": "65"
         },
         {
-          "name": "Putty",
-          "class": "devicon-putty-plain",
+          "name": "JFrog",
+          "class": "devicon-jfrog-original",
           "level": "65"
         },
         {
-          "name": "Npm",
-          "class": "devicon-npm-original-wordmark",
-          "level": "65"
-        },
-        {
-          "name": "Intellij",
-          "class": "devicon-intellij-plain",
+          "name": "Arduino",
+          "class": "devicon-arduino-plain",
           "level": "65"
         },
         {
@@ -175,8 +195,18 @@
           "level": "65"
         },
         {
-          "name": "Arduino",
-          "class": "devicon-arduino-plain",
+          "name": "Centos",
+          "class": "devicon-centos-plain",
+          "level": "65"
+        },
+        {
+          "name": "File Zilla",
+          "class": "devicon-filezilla-plain",
+          "level": "65"
+        },
+        {
+          "name": "Putty",
+          "class": "devicon-putty-plain",
           "level": "65"
         }
       ]
