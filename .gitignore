@@ -28,6 +28,12 @@ dist/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+
+# Vite specific
+.vite
+
+# Archive
+01.04.2026 archive.zip
 Thumbs.db
 
 # Logs
