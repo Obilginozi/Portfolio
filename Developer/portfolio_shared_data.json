@@ -198,6 +198,21 @@
           "name": "Putty",
           "class": "devicon-putty-plain",
           "level": "65"
+        },
+        {
+          "name": "VS Code",
+          "class": "devicon-vscode-plain",
+          "level": "90"
+        },
+        {
+          "name": "Cursor",
+          "class": "fab fa-cursor",
+          "level": "75"
+        },
+        {
+          "name": "Claude",
+          "class": "fas fa-brain",
+          "level": "80"
         }
       ]
     }
