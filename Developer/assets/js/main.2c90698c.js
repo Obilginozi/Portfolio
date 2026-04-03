@@ -14644,7 +14644,7 @@
             }
             loadSharedData() {
                 o().ajax({
-                    url: "portfolio_shared_data.json",
+                    url: "/Developer/portfolio_shared_data.json",
                     dataType: "json",
                     cache: !1,
                     success: function (e) {
@@ -14718,7 +14718,7 @@
             }
             loadSharedData() {
                 o().ajax({
-                    url: "portfolio_shared_data.json",
+                    url: "/Developer/portfolio_shared_data.json",
                     dataType: "json",
                     cache: !1,
                     success: function (e) {
