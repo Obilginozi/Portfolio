@@ -39,12 +39,7 @@ Portfolio/
 ├── IvyMontgomery/          # Ivy Montgomery profile directory
 ├── AtletikBezelye/         # Atletik Bezelye profile directory
 ├── PrivacyPolicy/          # Privacy Policy directory
-├── portfolio_shared_data.json    # Shared portfolio data
-├── res_primaryLanguage.json      # English content
-├── res_secondaryLanguage.json    # Turkish content
-├── image_mapping.json      # Image mapping configuration
-├── index.html              # Main HTML file
-├── manifest.json           # PWA manifest
+├── index.html              # Main HTML file (entry point, redirects to /Developer/)
 ├── spa_server.py           # Python SPA server for local development
 ├── robots.txt              # SEO robots file
 ├── sitemap.xml             # SEO sitemap
