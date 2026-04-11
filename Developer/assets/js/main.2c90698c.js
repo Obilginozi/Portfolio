@@ -14617,7 +14617,7 @@
             }
             applyPickedLanguage(e, t) {
                 this.swapCurrentlyActiveLanguage(t), document.documentElement.lang = e;
-                var n = document.documentElement.lang === window.$primaryLanguage ? "res_primaryLanguage.json" : "res_secondaryLanguage.json";
+                var n = document.documentElement.lang === window.$primaryLanguage ? "/Developer/res_primaryLanguage.json" : "/Developer/res_secondaryLanguage.json";
                 this.loadResumeFromPath(n)
             }
             swapCurrentlyActiveLanguage(e) {
