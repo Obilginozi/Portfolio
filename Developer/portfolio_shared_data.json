@@ -76,7 +76,8 @@
         },
         {
           "name": "AWS",
-          "class": "devicon-amazonwebservices-plain-wordmark",
+          "class": "",
+          "iconify": "mdi:aws",
           "level": "75"
         },
         {
