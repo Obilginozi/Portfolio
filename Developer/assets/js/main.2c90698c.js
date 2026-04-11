@@ -13022,7 +13022,11 @@
                     }
                 }, e.createElement("br", null), e.createElement("span", {
                     className: "wave"
-                }, r, " "), e.createElement("br", null), e.createElement("br", null), i, " ", e.createElement("br", null), " ", e.createElement("br", null), a, " ", e.createElement("br", null), " ", e.createElement("br", null), l, " ", e.createElement("br", null), s, " ", e.createElement("br", null), c, " ", e.createElement("br", null), " ", e.createElement("br", null), e.createElement("span", {
+                }, r, " "), e.createElement("br", null), e.createElement("br", null), e.createElement("span", {
+                    style: {
+                        whiteSpace: "pre-line"
+                    }
+                }, i), " ", e.createElement("br", null), " ", e.createElement("br", null), a, " ", e.createElement("br", null), " ", e.createElement("br", null), l, " ", e.createElement("br", null), s, " ", e.createElement("br", null), c, " ", e.createElement("br", null), " ", e.createElement("br", null), e.createElement("span", {
                     className: "wave"
                 }, o, " "), e.createElement("a", {
                     style: {
