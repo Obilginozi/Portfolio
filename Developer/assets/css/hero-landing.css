@@ -2,6 +2,7 @@
 #home {
   min-height: 100vh;
   min-height: 100dvh;
+  position: relative;
 }
 
 .hero-header-row {
@@ -9,13 +10,17 @@
   margin-right: 0;
 }
 
-/* Minimal scroll cue — centered under hero controls */
+/* Minimal scroll cue — bottom center of hero (first screen) */
 .hero-scroll-hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: max(1.35rem, env(safe-area-inset-bottom, 0px));
+  margin: 0 auto;
+  width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
   pointer-events: none;
   color: rgba(0, 0, 0, 0.35);
 }
