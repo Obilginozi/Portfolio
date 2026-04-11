@@ -34,8 +34,10 @@ Portfolio/
 ├── Developer/               # Developer profile directory
 │   ├── assets/             # CSS, JS, and images
 │   ├── portfolio_shared_data.json
-│   ├── res_primaryLanguage.json
+│   ├── res_primaryLanguage.json   # canonical resume JSON (edit here)
 │   └── res_secondaryLanguage.json
+├── res_primaryLanguage.json       # copy at site root (GitHub Pages / old JS); keep in sync with Developer/
+├── res_secondaryLanguage.json
 ├── IvyMontgomery/          # Ivy Montgomery profile directory
 ├── AtletikBezelye/         # Atletik Bezelye profile directory
 ├── PrivacyPolicy/          # Privacy Policy directory
