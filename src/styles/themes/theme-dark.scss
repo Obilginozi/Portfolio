@@ -19,8 +19,9 @@ body[data-theme="dark"] {
       border: 5px solid #8C8C8C;
    }
 
+   /* Language switcher is a pill (see language-toggle.css); keep header strip clean */
    .language {
-      background-color: #494949;
+      background-color: transparent;
    }
 
    .link-href {

@@ -14638,13 +14638,14 @@
                 }
             }
             applyPickedLanguage(e, t) {
-                this.swapCurrentlyActiveLanguage(t), document.documentElement.lang = e;
+                document.documentElement.lang = e, this.swapActiveLanguageUI(e);
                 var n = document.documentElement.lang === window.$primaryLanguage ? "/Developer/res_primaryLanguage.json" : "/Developer/res_secondaryLanguage.json";
                 this.loadResumeFromPath(n)
             }
-            swapCurrentlyActiveLanguage(e) {
-                var t = e === window.$primaryLanguageIconId ? window.$secondaryLanguageIconId : window.$primaryLanguageIconId;
-                document.getElementById(e).removeAttribute("filter", "brightness(40%)"), document.getElementById(t).setAttribute("filter", "brightness(40%)")
+            swapActiveLanguageUI(e) {
+                var t = document.getElementById(window.$primaryLanguageIconId),
+                    n = document.getElementById(window.$secondaryLanguageIconId);
+                t && (t.classList.remove("lang-toggle__option--active", "lang-toggle__option--inactive"), e === window.$primaryLanguage ? t.classList.add("lang-toggle__option--active") : t.classList.add("lang-toggle__option--inactive"), t.setAttribute("aria-pressed", e === window.$primaryLanguage ? "true" : "false")), n && (n.classList.remove("lang-toggle__option--active", "lang-toggle__option--inactive"), e === window.$secondaryLanguage ? n.classList.add("lang-toggle__option--active") : n.classList.add("lang-toggle__option--inactive"), n.setAttribute("aria-pressed", e === window.$secondaryLanguage ? "true" : "false"))
             }
             componentDidMount() {
                 this.loadSharedData(), this.applyPickedLanguage(window.$primaryLanguage, window.$secondaryLanguageIconId)
@@ -14685,28 +14686,20 @@
                     sharedData: this.state.sharedData.basic_info,
                     resumeBasicInfo: this.state.resumeData.basic_info
                 }), e.createElement("div", {
-                    className: "text-center language"
-                }, e.createElement("div", {
-                    onClick: () => this.applyPickedLanguage(window.$primaryLanguage, window.$secondaryLanguageIconId),
-                    style: {
-                        display: "inline"
-                    }
-                }, e.createElement("span", {
-                    className: "iconify language-icon mr-5",
-                    "data-icon": "twemoji-flag-for-flag-united-kingdom",
-                    "data-inline": "false",
-                    id: window.$primaryLanguageIconId
-                }, " ")), e.createElement("div", {
-                    onClick: () => this.applyPickedLanguage(window.$secondaryLanguage, window.$primaryLanguageIconId),
-                    style: {
-                        display: "inline"
-                    }
-                }, "  ", e.createElement("span", {
-                    className: "iconify language-icon",
-                    "data-icon": "twemoji-flag-for-flag-turkey",
-                    "data-inline": "false",
-                    id: window.$secondaryLanguageIconId
-                }, " "))), e.createElement(Ee, {
+                    className: "text-center language lang-toggle-wrap",
+                    role: "group",
+                    "aria-label": "Language"
+                }, e.createElement("button", {
+                    type: "button",
+                    className: "lang-toggle__option lang-toggle__option--inactive",
+                    id: window.$primaryLanguageIconId,
+                    onClick: () => this.applyPickedLanguage(window.$primaryLanguage, window.$secondaryLanguageIconId)
+                }, "EN"), e.createElement("button", {
+                    type: "button",
+                    className: "lang-toggle__option lang-toggle__option--inactive",
+                    id: window.$secondaryLanguageIconId,
+                    onClick: () => this.applyPickedLanguage(window.$secondaryLanguage, window.$primaryLanguageIconId)
+                }, "TR")), e.createElement(Ee, {
                     resumeBasicInfo: this.state.resumeData.basic_info,
                     sharedBasicInfo: this.state.sharedData.basic_info
                 }), e.createElement(ln, {
