@@ -14263,24 +14263,42 @@
         class un extends e.Component {
             render() {
                 if (this.props.sharedSkills && this.props.resumeBasicInfo) var t = this.props.resumeBasicInfo.section_name.skills,
-                    n = this.props.sharedSkills.icons.map((function (t, n) {
-                        return e.createElement("li", {
-                            className: "list-inline-item mx-3",
-                            key: n
-                        }, e.createElement("span", null, e.createElement("div", {
-                            className: "text-center skills-tile"
-                        }, e.createElement("i", {
-                            className: t.class,
+                    n = this.props.sharedSkills.icons.map((function (n, r) {
+                        var o = n.iconify ? e.createElement("span", {
+                            className: "iconify",
+                            "data-icon": n.iconify,
+                            style: {
+                                fontSize: "220%",
+                                display: "inline-block",
+                                lineHeight: 1
+                            }
+                        }) : n.image ? e.createElement("img", {
+                            src: n.image,
+                            alt: "",
+                            style: {
+                                height: "2.2em",
+                                width: "2.2em",
+                                objectFit: "contain",
+                                verticalAlign: "middle"
+                            }
+                        }) : e.createElement("i", {
+                            className: n.class,
                             style: {
                                 fontSize: "220%"
                             }
-                        }, e.createElement("p", {
+                        });
+                        return e.createElement("li", {
+                            className: "list-inline-item mx-3",
+                            key: r
+                        }, e.createElement("span", null, e.createElement("div", {
+                            className: "text-center skills-tile"
+                        }, o, e.createElement("p", {
                             className: "text-center",
                             style: {
                                 fontSize: "30%",
                                 marginTop: "4px"
                             }
-                        }, t.name)))))
+                        }, n.name))))
                     }));
                 return e.createElement("section", {
                     id: "skills"

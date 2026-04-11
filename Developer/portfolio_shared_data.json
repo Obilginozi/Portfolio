@@ -76,7 +76,7 @@
         },
         {
           "name": "AWS",
-          "class": "devicon-amazonwebservices-plain",
+          "class": "devicon-amazonwebservices-original colored",
           "level": "75"
         },
         {
@@ -206,12 +206,14 @@
         },
         {
           "name": "Cursor",
-          "class": "fab fa-cursor",
+          "class": "",
+          "image": "/Developer/assets/images/skills/cursor-ai.png",
           "level": "75"
         },
         {
           "name": "Claude",
-          "class": "fas fa-brain",
+          "class": "",
+          "iconify": "hugeicons:claude",
           "level": "80"
         }
       ]
