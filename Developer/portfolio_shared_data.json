@@ -30,49 +30,21 @@
     "skills": {
       "icons": [
         {
-          "name": "Docker",
-          "class": "devicon-docker-plain",
-          "level": "95"
-        },
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "React",
-          "class": "devicon-react-original",
-          "level": "85"
-        },
-        {
-          "name": "Java",
-          "class": "devicon-java-plain",
+          "name": "Claude",
+          "class": "",
+          "iconify": "hugeicons:claude",
           "level": "80"
+        },
+        {
+          "name": "Cursor",
+          "class": "",
+          "image": "/Developer/assets/images/skills/cursor-ai.png",
+          "level": "75"
         },
         {
           "name": "Firebase",
           "class": "devicon-firebase-plain",
           "level": "80"
-        },
-        {
-          "name": "SpringBoot",
-          "class": "devicon-spring-plain",
-          "level": "75"
         },
         {
           "name": "AWS",
@@ -81,34 +53,24 @@
           "level": "75"
         },
         {
-          "name": "Jquery",
-          "class": "devicon-jquery-plain",
-          "level": "75"
-        },
-        {
-          "name": "Flutter",
-          "class": "devicon-flutter-plain",
-          "level": "75"
-        },
-        {
-          "name": "Swift",
-          "class": "devicon-swift-plain",
-          "level": "70"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
           "name": "Google Cloud",
           "class": "devicon-googlecloud-plain",
           "level": "70"
         },
         {
-          "name": "C++",
-          "class": "devicon-cplusplus-plain",
-          "level": "65"
+          "name": "Docker",
+          "class": "devicon-docker-plain",
+          "level": "95"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain",
+          "level": "80"
+        },
+        {
+          "name": "SpringBoot",
+          "class": "devicon-spring-plain",
+          "level": "75"
         },
         {
           "name": "PostgreSql",
@@ -126,53 +88,63 @@
           "level": "60"
         },
         {
-          "name": "Git",
-          "class": "devicon-git-plain",
+          "name": "C++",
+          "class": "devicon-cplusplus-plain",
           "level": "65"
         },
         {
-          "name": "GitHub",
-          "class": "devicon-github-original",
-          "level": "65"
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
         },
         {
-          "name": "BitBucket",
-          "class": "devicon-bitbucket-original",
-          "level": "65"
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
         },
         {
-          "name": "Tortoisegit",
-          "class": "devicon-tortoisegit-plain",
-          "level": "65"
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain",
+          "level": "90"
         },
         {
-          "name": "Intellij",
-          "class": "devicon-intellij-plain",
-          "level": "65"
+          "name": "VS Code",
+          "class": "devicon-vscode-plain",
+          "level": "90"
         },
         {
-          "name": "Npm",
-          "class": "devicon-npm-original-wordmark",
-          "level": "65"
+          "name": "React",
+          "class": "devicon-react-original",
+          "level": "85"
         },
         {
-          "name": "Jira",
-          "class": "devicon-jira-plain",
-          "level": "65"
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
         },
         {
-          "name": "Trello",
-          "class": "devicon-trello-plain",
-          "level": "65"
+          "name": "Flutter",
+          "class": "devicon-flutter-plain",
+          "level": "75"
         },
         {
-          "name": "Slack",
-          "class": "devicon-slack-plain",
-          "level": "65"
+          "name": "Jquery",
+          "class": "devicon-jquery-plain",
+          "level": "75"
         },
         {
-          "name": "Material UI",
-          "class": "devicon-materialui-plain",
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "Swift",
+          "class": "devicon-swift-plain",
+          "level": "70"
+        },
+        {
+          "name": "Xcode",
+          "class": "devicon-xcode-plain",
           "level": "65"
         },
         {
@@ -181,8 +153,8 @@
           "level": "65"
         },
         {
-          "name": "Unity",
-          "class": "devicon-unity-original",
+          "name": "BitBucket",
+          "class": "devicon-bitbucket-original",
           "level": "65"
         },
         {
@@ -196,26 +168,59 @@
           "level": "65"
         },
         {
+          "name": "Git",
+          "class": "devicon-git-plain",
+          "level": "65"
+        },
+        {
+          "name": "GitHub",
+          "class": "devicon-github-original",
+          "level": "65"
+        },
+        {
+          "name": "Intellij",
+          "class": "devicon-intellij-plain",
+          "level": "65"
+        },
+        {
+          "name": "Jira",
+          "class": "devicon-jira-plain",
+          "level": "65"
+        },
+        {
+          "name": "Material UI",
+          "class": "devicon-materialui-plain",
+          "level": "65"
+        },
+        {
+          "name": "Npm",
+          "class": "devicon-npm-original-wordmark",
+          "level": "65"
+        },
+        {
           "name": "Putty",
           "class": "devicon-putty-plain",
           "level": "65"
         },
         {
-          "name": "VS Code",
-          "class": "devicon-vscode-plain",
-          "level": "90"
+          "name": "Slack",
+          "class": "devicon-slack-plain",
+          "level": "65"
         },
         {
-          "name": "Cursor",
-          "class": "",
-          "image": "/Developer/assets/images/skills/cursor-ai.png",
-          "level": "75"
+          "name": "Tortoisegit",
+          "class": "devicon-tortoisegit-plain",
+          "level": "65"
         },
         {
-          "name": "Claude",
-          "class": "",
-          "iconify": "hugeicons:claude",
-          "level": "80"
+          "name": "Trello",
+          "class": "devicon-trello-plain",
+          "level": "65"
+        },
+        {
+          "name": "Unity",
+          "class": "devicon-unity-original",
+          "level": "65"
         }
       ]
     }
