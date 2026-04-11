@@ -36,7 +36,9 @@ Portfolio/
 │   ├── portfolio_shared_data.json
 │   ├── res_primaryLanguage.json   # canonical resume JSON (edit here)
 │   └── res_secondaryLanguage.json
-├── res_primaryLanguage.json       # copy at site root (GitHub Pages / old JS); keep in sync with Developer/
+├── scripts/
+│   └── sync-resume-json.sh   # copies Developer/res_*.json → repo root (run after editing resume JSON)
+├── res_primaryLanguage.json       # mirror of Developer/ (legacy URL /res_*.json on GitHub Pages)
 ├── res_secondaryLanguage.json
 ├── IvyMontgomery/          # Ivy Montgomery profile directory
 ├── AtletikBezelye/         # Atletik Bezelye profile directory
@@ -51,6 +53,24 @@ Portfolio/
 ├── SECURITY.md             # Security policy
 └── README.md               # This file
 ```
+
+### Developer page data (JSON)
+
+The React bundle requests these URLs at runtime:
+
+| URL | File (source of truth) | What it holds |
+|-----|------------------------|---------------|
+| `/Developer/portfolio_shared_data.json` | `Developer/portfolio_shared_data.json` | Shared profile bits used with both languages: name, social links, profile image, **skills** list |
+| `/Developer/res_primaryLanguage.json` | `Developer/res_primaryLanguage.json` | English resume: about text, projects, certificates, experience |
+| `/Developer/res_secondaryLanguage.json` | `Developer/res_secondaryLanguage.json` | Turkish resume (same shape) |
+
+`res_primaryLanguage.json` and `res_secondaryLanguage.json` at the **repository root** are **not** read by the current app. They duplicate the `Developer/` files so `GET /res_*.json` still works for very old cached clients and on static hosting without Apache rewrites. **Edit only the files under `Developer/`**, then run:
+
+```bash
+./scripts/sync-resume-json.sh
+```
+
+Commit both the `Developer/` files and the updated root copies before deploying.
 
 ## 🎨 Features
 
