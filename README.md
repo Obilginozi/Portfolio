@@ -70,11 +70,11 @@ Portfolio/
 
 ## 🚀 Deployment
 
-This portfolio is automatically deployed to GitHub Pages:
+This portfolio is deployed to GitHub Pages from the **`gh-pages`** branch (not `main`):
 
 1. **Repository**: `https://github.com/Obilginozi/Portfolio`
 2. **Custom Domain**: `oguzhanbilgin.com`
-3. **Deployment**: Automatic deployment on push to main branch
+3. **Deployment**: Push changes to `main`, then merge `main` into `gh-pages` and push `gh-pages` (or set Pages to build from `main` in repo Settings → Pages).
 4. **SSL**: Automatic HTTPS via GitHub Pages
 
 ### Local Development
