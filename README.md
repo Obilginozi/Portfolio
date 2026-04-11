@@ -46,6 +46,7 @@ Portfolio/
 ├── robots.txt              # SEO robots file
 ├── sitemap.xml             # SEO sitemap
 ├── CNAME                   # Custom domain configuration
+├── .nojekyll               # Disable Jekyll on GitHub Pages so root JSON and static files publish as-is
 ├── .htaccess               # Apache redirect rules
 ├── SECURITY.md             # Security policy
 └── README.md               # This file
