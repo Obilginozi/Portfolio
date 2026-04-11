@@ -21,10 +21,15 @@ class SPAHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
             # Serve index.html for Developer SPA route
             self.path = '/index.html'
 
-        # Legacy privacy URLs → canonical document path
-        if original_path in ('/DieterClock_PrivacyPolicy', '/DieterClock_PrivacyPolicy.html'):
+        # Legacy / alternate privacy URLs → canonical directory
+        _privacy_canon = '/DieterClock/Privacy_Policy/'
+        if original_path in (
+            '/DieterClock_PrivacyPolicy',
+            '/DieterClock_PrivacyPolicy.html',
+            '/DieterClock/Privacy_Policy.html',
+        ):
             self.send_response(301)
-            self.send_header('Location', '/DieterClock/Privacy_Policy.html')
+            self.send_header('Location', _privacy_canon)
             self.send_header('Content-Length', '0')
             self.end_headers()
             return

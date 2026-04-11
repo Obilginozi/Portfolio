@@ -3,8 +3,9 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.oguzhanbilgin\.com$ [NC]
 RewriteRule ^(.*)$ https://oguzhanbilgin.com/$1 [R=301,L]
 
-# Dieter Clock privacy policy — canonical path under /DieterClock/
-RewriteRule ^DieterClock_PrivacyPolicy(?:\.html)?/?$ /DieterClock/Privacy_Policy.html [R=301,L]
+# Dieter Clock privacy policy — canonical directory URL (GitHub Pages–friendly)
+RewriteRule ^DieterClock_PrivacyPolicy(?:\.html)?/?$ /DieterClock/Privacy_Policy/ [R=301,L]
+RewriteRule ^DieterClock/Privacy_Policy\.html$ /DieterClock/Privacy_Policy/ [R=301,L]
 
 # Fix image path issues
 RewriteRule ^images//assets/images/(.*)$ /assets/images/$1 [R=301,L]
