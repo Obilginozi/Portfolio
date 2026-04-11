@@ -14565,13 +14565,16 @@
                 return e.createElement("header", {
                     id: "home",
                     style: {
-                        height: window.innerHeight - 140,
-                        display: "block"
+                        minHeight: "100vh",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        boxSizing: "border-box"
                     }
                 }, e.createElement("div", {
-                    className: "row aligner",
+                    className: "row aligner hero-header-row",
                     style: {
-                        height: "100%"
+                        width: "100%"
                     }
                 }, e.createElement("div", {
                     className: "col-md-12"
@@ -14625,7 +14628,12 @@
                         }
                     }),
                     id: "icon-switch"
-                })))))
+                }), e.createElement("div", {
+                    className: "hero-scroll-hint",
+                    "aria-hidden": "true"
+                }, e.createElement("span", {
+                    className: "hero-scroll-hint__chev"
+                }))))))
             }
         }
         const _n = Pn;

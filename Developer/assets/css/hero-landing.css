@@ -1,0 +1,54 @@
+/* Full-viewport hero: #home min-height set in bundle; reinforce for dynamic viewport */
+#home {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.hero-header-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Minimal scroll cue — centered under hero controls */
+.hero-scroll-hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+body[data-theme="dark"] .hero-scroll-hint {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-scroll-hint__chev {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  animation: hero-scroll-nudge 2s ease-in-out infinite;
+}
+
+@keyframes hero-scroll-nudge {
+  0%,
+  100% {
+    transform: rotate(45deg) translateY(0);
+    opacity: 0.35;
+  }
+  50% {
+    transform: rotate(45deg) translateY(8px);
+    opacity: 0.9;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-hint__chev {
+    animation: none;
+    opacity: 0.5;
+  }
+}
