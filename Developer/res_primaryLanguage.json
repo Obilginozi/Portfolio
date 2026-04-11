@@ -233,6 +233,21 @@
   ],
   "certificates": [
     {
+      "title": "SCRUMstudy — Scrum for Operations & DevOps Fundamentals Certified (SODFC)",
+      "startDate": "June 2025",
+      "description": "",
+      "images": [
+        "/Developer/assets/images/Scrum_Sertificate.png"
+      ],
+      "url": "https://www.scrumstudy.com",
+      "technologies": [
+        {
+          "class": "",
+          "name": ""
+        }
+      ]
+    },
+    {
       "title": "Amazon Web Servers - Completion",
       "startDate": "December 2023",
       "description": "",

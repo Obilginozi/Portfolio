@@ -233,6 +233,21 @@
   ],
   "certificates": [
     {
+      "title": "SCRUMstudy — Operasyon ve DevOps için Scrum Temelleri Sertifikası (SODFC)",
+      "startDate": "Haziran 2025",
+      "description": "",
+      "images": [
+        "/Developer/assets/images/Scrum_Sertificate.png"
+      ],
+      "url": "https://www.scrumstudy.com",
+      "technologies": [
+        {
+          "class": "",
+          "name": ""
+        }
+      ]
+    },
+    {
       "title": "Amazon Web Servers - Tamamlama",
       "startDate": "Aralık 2023",
       "description": "",
