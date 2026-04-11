@@ -34,12 +34,8 @@ Portfolio/
 ├── Developer/               # Developer profile directory
 │   ├── assets/             # CSS, JS, and images
 │   ├── portfolio_shared_data.json
-│   ├── res_primaryLanguage.json   # canonical resume JSON (edit here)
+│   ├── res_primaryLanguage.json   # English resume JSON (edit here)
 │   └── res_secondaryLanguage.json
-├── scripts/
-│   └── sync-resume-json.sh   # copies Developer/res_*.json → repo root (run after editing resume JSON)
-├── res_primaryLanguage.json       # mirror of Developer/ (legacy URL /res_*.json on GitHub Pages)
-├── res_secondaryLanguage.json
 ├── IvyMontgomery/          # Ivy Montgomery profile directory
 ├── AtletikBezelye/         # Atletik Bezelye profile directory
 ├── PrivacyPolicy/          # Privacy Policy directory
@@ -48,7 +44,7 @@ Portfolio/
 ├── robots.txt              # SEO robots file
 ├── sitemap.xml             # SEO sitemap
 ├── CNAME                   # Custom domain configuration
-├── .nojekyll               # Disable Jekyll on GitHub Pages so root JSON and static files publish as-is
+├── .nojekyll               # Disable Jekyll on GitHub Pages (static site as committed)
 ├── .htaccess               # Apache redirect rules
 ├── SECURITY.md             # Security policy
 └── README.md               # This file
@@ -64,13 +60,7 @@ The React bundle requests these URLs at runtime:
 | `/Developer/res_primaryLanguage.json` | `Developer/res_primaryLanguage.json` | English resume: about text, projects, certificates, experience |
 | `/Developer/res_secondaryLanguage.json` | `Developer/res_secondaryLanguage.json` | Turkish resume (same shape) |
 
-`res_primaryLanguage.json` and `res_secondaryLanguage.json` at the **repository root** are **not** read by the current app. They duplicate the `Developer/` files so `GET /res_*.json` still works for very old cached clients and on static hosting without Apache rewrites. **Edit only the files under `Developer/`**, then run:
-
-```bash
-./scripts/sync-resume-json.sh
-```
-
-Commit both the `Developer/` files and the updated root copies before deploying.
+Edit these JSON files under `Developer/` and deploy; the app only loads the `/Developer/...` URLs above.
 
 ## 🎨 Features
 

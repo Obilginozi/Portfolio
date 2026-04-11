@@ -3,12 +3,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.oguzhanbilgin\.com$ [NC]
 RewriteRule ^(.*)$ https://oguzhanbilgin.com/$1 [R=301,L]
 
-# Resume JSON: canonical copies live in /Developer/. Root-level res_*.json files in the repo
-# serve static hosts (GitHub Pages, etc.) that ignore .htaccess; these rules help Apache when
-# only /Developer/ copies exist or for consistency.
-RewriteRule ^res_primaryLanguage\.json$ /Developer/res_primaryLanguage.json [L]
-RewriteRule ^res_secondaryLanguage\.json$ /Developer/res_secondaryLanguage.json [L]
-
 # Fix image path issues
 RewriteRule ^images//assets/images/(.*)$ /assets/images/$1 [R=301,L]
 RewriteRule ^images/assets/images/(.*)$ /assets/images/$1 [R=301,L]
