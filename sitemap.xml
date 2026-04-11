@@ -33,10 +33,10 @@
         <priority>0.7</priority>
     </url>
 
-    <!-- Privacy Policy -->
+    <!-- Dieter Clock — Privacy Policy -->
     <url>
-        <loc>https://oguzhanbilgin.com/DieterClock_PrivacyPolicy</loc>
-        <lastmod>2025-10-26</lastmod>
+        <loc>https://oguzhanbilgin.com/DieterClock/Privacy_Policy.html</loc>
+        <lastmod>2026-04-11</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>

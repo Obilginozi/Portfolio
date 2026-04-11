@@ -38,7 +38,7 @@ Portfolio/
 │   └── res_secondaryLanguage.json
 ├── IvyMontgomery/          # Ivy Montgomery profile directory
 ├── AtletikBezelye/         # Atletik Bezelye profile directory
-├── PrivacyPolicy/          # Privacy Policy directory
+├── DieterClock/            # Dieter Clock app notes & privacy policy HTML
 ├── index.html              # Main HTML file (entry point, redirects to /Developer/)
 ├── spa_server.py           # Python SPA server for local development
 ├── robots.txt              # SEO robots file
@@ -121,7 +121,7 @@ This portfolio includes multiple profile pages for different personas:
 - **Developer Profile**: `http://localhost:8005/Developer/` - Technical developer profile
 - **Ivy Montgomery**: `http://localhost:8005/IvyMontgomery/` - Creative profile
 - **Atletik Bezelye**: `http://localhost:8005/AtletikBezelye/` - Sports/fitness profile
-- **Privacy Policy**: `http://localhost:8005/DieterClock_PrivacyPolicy` - Privacy Policy page
+- **Privacy Policy (Dieter Clock)**: `http://localhost:8005/DieterClock/Privacy_Policy.html`
 
 ### Mobile Testing
 
@@ -157,6 +157,6 @@ This project is open source.
 
 ## 🔒 Privacy
 
-Your privacy is important to us. View our [Privacy Policy](https://oguzhanbilgin.com/Privacy_Policy) to learn how we handle your information.
+Your privacy is important to us. View the [Dieter Clock Privacy Policy](https://oguzhanbilgin.com/DieterClock/Privacy_Policy.html) to learn how we handle your information.
 
 **Built with ❤️ by Oğuzhan Alfred Bilgin**

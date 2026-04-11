@@ -20,23 +20,15 @@ class SPAHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         elif path == '/Developer':
             # Serve index.html for Developer SPA route
             self.path = '/index.html'
-        elif path == '/DieterClock_PrivacyPolicy':
-            # Serve PrivacyPolicy/Privacy_Policy.html but keep clean URL
-            self.path = '/PrivacyPolicy/Privacy_Policy.html'
-        
-        # Intercept the end_path to customize how URL is displayed
-        if original_path == '/DieterClock_PrivacyPolicy':
-            # Check if file exists in PrivacyPolicy directory
-            if os.path.exists('PrivacyPolicy/Privacy_Policy.html'):
-                with open('PrivacyPolicy/Privacy_Policy.html', 'rb') as f:
-                    self.send_response(200)
-                    self.send_header('Content-type', 'text/html; charset=utf-8')
-                    # Add custom headers to prevent URL rewriting
-                    self.send_header('Content-Length', str(os.path.getsize('PrivacyPolicy/Privacy_Policy.html')))
-                    self.end_headers()
-                    self.wfile.write(f.read())
-                    return
-        
+
+        # Legacy privacy URLs → canonical document path
+        if original_path in ('/DieterClock_PrivacyPolicy', '/DieterClock_PrivacyPolicy.html'):
+            self.send_response(301)
+            self.send_header('Location', '/DieterClock/Privacy_Policy.html')
+            self.send_header('Content-Length', '0')
+            self.end_headers()
+            return
+
         # For all other requests, serve normally
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
