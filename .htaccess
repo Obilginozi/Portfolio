@@ -3,6 +3,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.oguzhanbilgin\.com$ [NC]
 RewriteRule ^(.*)$ https://oguzhanbilgin.com/$1 [R=301,L]
 
+# Resume JSON lives under /Developer/; older cached bundles requested these at site root (404).
+RewriteRule ^res_primaryLanguage\.json$ /Developer/res_primaryLanguage.json [L]
+RewriteRule ^res_secondaryLanguage\.json$ /Developer/res_secondaryLanguage.json [L]
+
 # Fix image path issues
 RewriteRule ^images//assets/images/(.*)$ /assets/images/$1 [R=301,L]
 RewriteRule ^images/assets/images/(.*)$ /assets/images/$1 [R=301,L]

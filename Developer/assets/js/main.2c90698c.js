@@ -14646,6 +14646,7 @@
                 this.loadSharedData(), this.applyPickedLanguage(window.$primaryLanguage, window.$secondaryLanguageIconId)
             }
             loadResumeFromPath(e) {
+                "/" !== e.charAt(0) && (e = "/Developer/" + e.replace(/^\.\//, ""));
                 o().ajax({
                     url: e,
                     dataType: "json",
