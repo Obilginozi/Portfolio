@@ -17,9 +17,13 @@ class SPAHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         elif path == '/IvyMontgomery':
             # Serve IvyMontgomery/index.html
             self.path = '/IvyMontgomery/index.html'
-        elif path == '/Developer':
-            # Serve index.html for Developer SPA route
-            self.path = '/index.html'
+        # /Developer without trailing slash → canonical /Developer/ (matches asset base + Apache rule)
+        if original_path == '/Developer':
+            self.send_response(301)
+            self.send_header('Location', '/Developer/')
+            self.send_header('Content-Length', '0')
+            self.end_headers()
+            return
 
         # Legacy / alternate privacy URLs → canonical directory
         _privacy_canon = '/DieterClock/Privacy_Policy/'

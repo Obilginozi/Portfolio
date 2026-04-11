@@ -11,6 +11,9 @@ RewriteRule ^DieterClock/Privacy_Policy\.html$ /DieterClock/Privacy_Policy/ [R=3
 RewriteRule ^images//assets/images/(.*)$ /assets/images/$1 [R=301,L]
 RewriteRule ^images/assets/images/(.*)$ /assets/images/$1 [R=301,L]
 
+# Developer portfolio lives in /Developer/; force trailing slash so relative asset paths resolve
+RewriteRule ^Developer$ /Developer/ [R=301,L]
+
 # SPA Routes - serve index.html for client-side routes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
